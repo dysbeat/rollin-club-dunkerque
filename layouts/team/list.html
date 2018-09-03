@@ -1,0 +1,10 @@
+{{ partial "header" . }}
+
+<main>
+
+    {{ range .Pages }} {{ partial "team/list-item" . }} {{ end }}
+
+</main>
+
+
+{{ partial "footer" . }}

@@ -1,0 +1,10 @@
+{{ partial "header" . }}
+
+<main width="420">
+
+    {{ range .Pages }} {{ partial "result/list-item" . }} {{ end }}
+
+</main>
+
+
+{{ partial "footer" . }}

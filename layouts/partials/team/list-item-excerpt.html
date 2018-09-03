@@ -1,0 +1,9 @@
+<div class="item">
+
+    <h4 class="item-title">{{ .Title }}</a></h4>
+    {{ range .Params.Schedule }}
+    <kbd class="item-tag">{{ . }}</kbd></br>
+    {{ end }}
+    <h5><a href="team/{{ replace .Title "Equipe " "" }}">Plus d'information</a></h5>
+
+</div>

@@ -1,0 +1,8 @@
+<div class="item">
+    <h4 class="item-title">{{ .Title }}</a></h4>
+    <h3>Horaires</h3>
+    {{ range .Params.Schedule }} <h4>{{ . }}</h4> {{ end }}
+
+    <h3>Equipement</h3>
+    {{ range .Params.Equipment }} <h4>{{ . }}</h4>{{ end }}
+</div>
