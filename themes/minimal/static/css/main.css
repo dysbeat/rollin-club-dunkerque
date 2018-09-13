@@ -25,7 +25,7 @@ main {
 /*home page*/
 
 .intro {
-    transform: translateY(22vh);
+    transform: translateY(5vh);
 }
 
 .intro > h1 {
@@ -39,8 +39,8 @@ main {
 }
 
 .intro > .profile {
-    width: 10vh;
-    height: 10vh;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -72,6 +72,10 @@ a:hover {
 
 .item {
     padding: 10px 0;
+}
+
+.item-title {
+    color: var(--accent);
 }
 
 .item-tag {
