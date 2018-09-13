@@ -12,7 +12,7 @@ googleAnalytics = ""
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    highlightLanguages = []
     description = "Adresse: Salle de sport du lycée de l'Europe</br> 809 Rue du Banc vert</br> 59640 Dunkerque"
 
 [[menu.main]]
