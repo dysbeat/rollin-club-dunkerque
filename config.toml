@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://gitlab.dysbeat.fr/"
 languageCode = "en-us"
 title = "Roll'in club dunkerque"
 theme = "minimal"
