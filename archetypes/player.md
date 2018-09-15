@@ -2,6 +2,6 @@
 name: "{{ replace .Name "-" " " }}"
 team: ""
 position: ""
-goal: 0
+goals: 0
 ---
 
