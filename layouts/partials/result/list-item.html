@@ -1,23 +1,13 @@
-<div class="item" width="420">
+<div class="item">
     <h4 align="left">
         Le {{ .Params.Day }}
         {{ if isset .Params "schedule" }}
-            , {{ .Params.Schedule }}
+        , {{ .Params.Schedule }}
         {{ end }}
         {{ if isset .Params "place" }}
-            , à {{ lower .Params.Place }}
+        , à {{ lower .Params.Place }}
         {{ end }}
     </h4>
-    <table width="400" align="right">
-        <tr width="400">
-            <th width="30%" align="right">{{ .Params.Ateam }}</th>
-            <th width="5%"> </th>
-            <th width="10%">{{ .Params.Ascore }}</th>
-            <th width="10%"> | </th>
-            <th width="10%">{{ .Params.Bscore }}</th>
-            <th width="5%"> </th>
-            <th width="30%" align="left">{{ .Params.Bteam }}</th>
-        </tr>
-    </table>
+    {{ partial "result/result" . }}
     <br>
 </div>

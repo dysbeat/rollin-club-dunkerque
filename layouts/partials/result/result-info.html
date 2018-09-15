@@ -1,0 +1,5 @@
+<div class="result-info-container">
+    <div>Le {{ .Params.Day }}</div>
+    {{ if isset .Params "schedule" }}<div>, {{ .Params.Schedule }}</div>{{ end }}
+    {{ if isset .Params "place" }}<div>, à {{ lower .Params.Place }}</div>{{ end }}
+</div>

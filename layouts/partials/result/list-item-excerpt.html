@@ -1,16 +1,4 @@
-<div class="item" width="500">
-        <table width="500">
-            <tr width="500">
-                <th width="4%"></th>
-                <th width="30%">{{ .Params.Ateam }}</th>
-                <th width="5%"> </th>
-                <th width="10%">{{ .Params.Ascore }}</th>
-                <th width="10%"> | </th>
-                <th width="10%">{{ .Params.Bscore }}</th>
-                <th width="5%"> </th>
-                <th width="30%">{{ .Params.Bteam }}</th>
-            </tr>
-        </table>
-        <br>
-    </div>
-    
+<div class="item">
+    {{ partial "result/result" . }}
+    <br>
+</div>

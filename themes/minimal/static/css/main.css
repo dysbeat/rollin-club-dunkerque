@@ -102,3 +102,20 @@ footer {
 img {
     max-width: 100%;
 }
+
+/* Result */
+.result-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-score-container {
+    display: flex;
+    justify-content: space-between;
+    width: 45%
+}
+
+.result-info-container {
+    display: flex;
+    justify-content: flex-start;
+}
