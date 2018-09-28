@@ -121,12 +121,21 @@ img {
 }
 
 /* Team */
-.team-container {
-    display: flex;
-    justify-content: space-between;
-    width: 120%
+
+@media only screen and (max-width: 400px) {
+    .team-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
+@media only screen and (min-width: 401px) {
+    .team-container {
+        display: flex;
+        justify-content: space-between;
+        width: 120%
+    }
+}
 /* tooltip */
 [data-tip] {
 	position:relative;
