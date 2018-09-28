@@ -2,7 +2,9 @@
 
 <main>
 
-    {{ range .Pages }} {{ partial "team/list-item" . }} {{ end }}
+    <div class="team-container">
+        {{ range .Pages }} {{ partial "team/list-item" . }} {{ end }}
+    </div>
 
 </main>
 

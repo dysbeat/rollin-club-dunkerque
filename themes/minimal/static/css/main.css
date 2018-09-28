@@ -119,3 +119,43 @@ img {
     display: flex;
     justify-content: flex-start;
 }
+
+/* Team */
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    width: 120%
+}
+
+/* tooltip */
+[data-tip] {
+	position:relative;
+}
+[data-tip]:before {
+	/* hides the tooltip when not hovered */
+	content:'';
+	display:none;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:25px;
+	left:50px;
+	padding:1px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:10;
+	font-size: 0.75em;
+	height:22px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}

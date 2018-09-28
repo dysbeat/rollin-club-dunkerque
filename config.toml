@@ -8,6 +8,7 @@ googleAnalytics = ""
     logo = "header.png"
     accent = "grey"
     showBorder = true
+    mathjax = false
     backgroundColor = "white"
     font = "Source Code Pro" # should match the name on Google Fonts!
     highlight = true

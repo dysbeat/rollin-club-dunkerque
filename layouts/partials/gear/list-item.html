@@ -1,0 +1,4 @@
+<div {{ if isset .Params "detail" }} data-tip="{{ .Params.Detail }}" {{ end }}>
+    {{ .Params.Name }}
+    {{ if isset .Params "detail" }} <i class="fa fa-info"></i> {{ end }}
+</div>
