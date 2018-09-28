@@ -1,0 +1,10 @@
+{{ partial "header" . }}
+
+<main>
+
+    {{ range where .Pages "Section" "results" }} {{ partial "results/list-item" . }}
+    <hr>{{ end }}
+
+</main>
+
+{{ partial "footer" . }}

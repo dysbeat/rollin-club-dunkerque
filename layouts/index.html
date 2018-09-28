@@ -9,7 +9,8 @@
         {{ with .Site.Params.Logo }} <img class="profile" src="{{ . }}"> {{ end }}
 
         <h4 class="item-title">Dernier résultat</h4>
-        {{ range first 1 (where (where .Pages "Section" "result") ".Params.ateam" "==" "DUNKERQUE") }} {{ partial "result/list-item-excerpt" . }} {{ end }}
+        {{ range first 1 (where (where .Pages "Section" "results") "Params.ateam" "==" "DUNKERQUE") }}
+        {{ partial "results/list-item-excerpt" . }} {{ end }}
 
         {{ range where .Pages "Section" "team" }} {{ partial "team/list-item-excerpt" . }} {{ end }}
 
