@@ -1,0 +1,252 @@
+{
+    "day": "21-10-2018",
+    "schedule": "10h00",
+    "place": "Boulogne",
+    "ateam": "BOULOGNE SUR MER",
+    "bteam": "AMIENS",
+    "ascore": "4",
+    "bscore": "7"
+},
+{
+    "day": "21-10-2018",
+    "schedule": "12h00",
+    "place": "Boulogne",
+    "ateam": "DUNKERQUE",
+    "bteam": "MOREUIL",
+    "ascore": "22",
+    "bscore": "2"
+},
+{
+    "day": "11-11-2018",
+    "schedule": "10h00",
+    "place": "Pont de Metz",
+    "ateam": "PONT DE METZ",
+    "bteam": "AMIENS",
+    "ascore": "2",
+    "bscore": "5"
+},
+{
+    "day": "11-11-2018",
+    "schedule": "12h00",
+    "place": "Pont de Metz",
+    "ateam": "BETHUNE",
+    "bteam": "DUNKERQUE",
+    "ascore": "1",
+    "bscore": "7"
+},
+{
+    "day": "11-11-2018",
+    "schedule": "14h00",
+    "place": "Pont de Metz",
+    "ateam": "BOULOGNE SUR MER",
+    "bteam": "MOREUIL",
+    "ascore": "12",
+    "bscore": "3"
+},
+{
+    "day": "18-11-2018",
+    "schedule": "10h00",
+    "place": "Moreuil",
+    "ateam": "MOREUIL",
+    "bteam": "PONT DE METZ",
+    "ascore": "4",
+    "bscore": "15"
+},
+{
+    "day": "18-11-2018",
+    "schedule": "12h00",
+    "place": "Moreuil",
+    "ateam": "BETHUNE",
+    "bteam": "VALENCIENNES",
+    "ascore": "16",
+    "bscore": "3"
+},
+{
+    "day": "18-11-2018",
+    "schedule": "14h00",
+    "place": "Moreuil",
+    "ateam": "DUNKERQUE",
+    "bteam": "AMIENS",
+    "ascore": "0",
+    "bscore": "5"
+},
+{
+    "day": "02-12-2018",
+    "schedule": "10h00",
+    "place": "Amiens",
+    "ateam": "AMIENS",
+    "bteam": "BETHUNE",
+    "ascore": "9",
+    "bscore": "5"
+},
+{
+    "day": "02-12-2018",
+    "schedule": "12h00",
+    "place": "Amiens",
+    "ateam": "PONT DE METZ",
+    "bteam": "BOULOGNE SUR MER",
+    "ascore": "7",
+    "bscore": "5"
+},
+{
+    "day": "02-12-2018",
+    "schedule": "14h00",
+    "place": "Amiens",
+    "ateam": "DUNKERQUE",
+    "bteam": "VALENCIENNES",
+    "ascore": "11",
+    "bscore": "11"
+},
+{
+    "day": "09-12-2018",
+    "schedule": "10h00",
+    "place": "Boulogne",
+    "ateam": "BETHUNE",
+    "bteam": "MOREUIL",
+    "ascore": "15",
+    "bscore": "2"
+},
+{
+    "day": "09-12-2018",
+    "schedule": "12h00",
+    "place": "Boulogne",
+    "ateam": "DUNKERQUE",
+    "bteam": "BOULOGNE SUR MER",
+    "ascore": "15",
+    "bscore": "6"
+},
+{
+    "day": "09-12-2018",
+    "schedule": "14h00",
+    "place": "Boulogne",
+    "ateam": "AMIENS",
+    "bteam": "VALENCIENNES",
+    "ascore": "10",
+    "bscore": "5"
+},
+{
+    "day": "16-12-2018",
+    "schedule": "10h00",
+    "place": "Pont de Metz",
+    "ateam": "VALENCIENNES",
+    "bteam": "MOREUIL",
+    "ascore": "15",
+    "bscore": "10"
+},
+{
+    "day": "16-12-2018",
+    "schedule": "12h00",
+    "place": "Pont de Metz",
+    "ateam": "BOULOGNE SUR MER",
+    "bteam": "BETHUNE",
+    "ascore": "3",
+    "bscore": "16"
+},
+{
+    "day": "16-12-2018",
+    "schedule": "14h00",
+    "place": "Pont de Metz",
+    "ateam": "PONT DE METZ",
+    "bteam": "DUNKERQUE",
+    "ascore": "7",
+    "bscore": "11"
+},
+{
+    "day": "13-01-2019",
+    "schedule": "10h00",
+    "place": "Moreuil",
+    "ateam": "MOREUIL",
+    "bteam": "AMIENS",
+    "ascore": "1",
+    "bscore": "8"
+},
+{
+    "day": "13-01-2019",
+    "schedule": "12h00",
+    "place": "Moreuil",
+    "ateam": "VALENCIENNES",
+    "bteam": "BOULOGNE SUR MER",
+    "ascore": "9",
+    "bscore": "4"
+},
+{
+    "day": "13-01-2019",
+    "schedule": "14h05",
+    "place": "Moreuil",
+    "ateam": "BETHUNE",
+    "bteam": "PONT DE METZ",
+    "ascore": "4",
+    "bscore": "8"
+},
+{
+    "day": "20-01-2019",
+    "schedule": "10h00",
+    "place": "Boulogne",
+    "ateam": "AMIENS",
+    "bteam": "BOULOGNE SUR MER",
+    "ascore": "7",
+    "bscore": "3"
+},
+{
+    "day": "20-01-2019",
+    "schedule": "12h00",
+    "place": "Boulogne",
+    "ateam": "VALENCIENNES",
+    "bteam": "PONT DE METZ",
+    "ascore": "2",
+    "bscore": "6"
+},
+{
+    "day": "27-01-2019",
+    "schedule": "10h00",
+    "place": "Boulogne",
+    "ateam": "BETHUNE",
+    "bteam": "AMIENS",
+    "ascore": "3",
+    "bscore": "1"
+},
+{
+    "day": "27-01-2019",
+    "schedule": "12h35",
+    "place": "Boulogne",
+    "ateam": "BOULOGNE SUR MER",
+    "bteam": "PONT DE METZ",
+    "ascore": "2",
+    "bscore": "6"
+},
+{
+    "day": "27-01-2019",
+    "schedule": "14h00",
+    "place": "Boulogne",
+    "ateam": "VALENCIENNES",
+    "bteam": "DUNKERQUE",
+    "ascore": "2",
+    "bscore": "11"
+},
+{
+    "day": "03-02-2019",
+    "schedule": "10h00",
+    "place": "PONT DE METZ",
+    "ateam": "AMIENS",
+    "bteam": "PONT DE METZ",
+    "ascore": "10",
+    "bscore": "1"
+},
+{
+    "day": "03-02-2019",
+    "schedule": "12h00",
+    "place": "Pont de Metz",
+    "ateam": "DUNKERQUE",
+    "bteam": "BETHUNE",
+    "ascore": "5",
+    "bscore": "8"
+},
+{
+    "day": "03-02-2019",
+    "schedule": "14h00",
+    "place": "Moreuil",
+    "ateam": "MOREUIL",
+    "bteam": "BOULOGNE SUR MER",
+    "ascore": "11",
+    "bscore": "15"
+}

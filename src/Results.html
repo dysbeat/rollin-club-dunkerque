@@ -1,0 +1,71 @@
+<ul class="result-list">
+	{#each results as result}
+	<Result result={result} />
+	{/each}
+</ul>
+
+
+<style>
+  .season-menu {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    color: hsl(203, 15%, 20%);
+    background-color: transparent;
+  }
+
+  p:hover {
+    color: hsl(220, 37%, 35%);
+    background-color: transparent;
+  }
+
+  .pad {
+    padding-bottom: 30px;
+  }
+  .title {
+    font-weight: 600;
+  }
+
+  .blue {
+    color: hsl(220, 45%, 45%);
+  }
+
+  .selected {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(220, 37%, 45%);
+    background-color: transparent;
+  }
+
+  .selected:hover {
+    color: hsl(220, 37%, 45%);
+    background-color: transparent;
+  }
+
+  .result-list {
+    padding: 5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+</style>
+
+<script>
+  import Result from "./Result.html";
+
+  export default {
+    components: {
+      Result
+    }
+  };
+</script>

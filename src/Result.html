@@ -1,0 +1,102 @@
+<div class="item">
+	<p class="info">{ MakeInfo(result) }</p>
+	<div class="result-container">
+		<div class="result-score-container result-score-container-a">
+			<p class='team team-a { result.ateam == "DUNKERQUE" ? "highlight" : ""}'>{ result.ateam }</p>
+			<p class='score { +result.ascore > +result.bscore ? "score-highlight" : ""}'>{ result.ascore }</p>
+		</div>
+		<p> | </p>
+		<div class="result-score-container result-score-container-b">
+			<p class='score { +result.bscore > +result.ascore ? "score-highlight" : ""}'>{ result.bscore }</p>
+			<p class='team team-b { result.bteam == "DUNKERQUE" ? "highlight" : ""}'>{ result.bteam }</p>
+		</div>
+	</div>
+</div>
+
+<script>
+  export default {
+    helpers: {
+      MakeInfo(x) {
+        return (
+          "Le " +
+          x.day +
+          (x.schedule ? ", " + x.schedule : "") +
+          (x.place ? ", à " + x.place.toLowerCase() : "")
+        );
+      }
+    }
+  };
+</script>
+
+<style>
+  p {
+    color: hsl(203, 15%, 20%);
+  }
+  .info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(203, 15%, 47%);
+  }
+
+  .team {
+    width: 150px;
+    height: max-content;
+    justify-self: center;
+    font-size: 14px;
+  }
+
+  .team-a {
+    text-align: center;
+    align-self: right;
+  }
+
+  .team-b {
+    text-align: center;
+    align-self: left;
+  }
+
+  .highlight {
+    color: hsl(220, 45%, 45%);
+  }
+
+  .score {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .score-highlight {
+    text-decoration: underline;
+  }
+
+  .item {
+    /* padding: 10px 0; */
+    padding-bottom: 40px;
+  }
+
+  /* Result */
+  .result-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .result-score-container {
+    display: flex;
+    align-content: center;
+    width: 45%;
+  }
+
+  .result-score-container-a {
+    justify-content: right;
+  }
+
+  .result-score-container-b {
+    justify-content: left;
+  }
+
+  .result-info-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+</style>

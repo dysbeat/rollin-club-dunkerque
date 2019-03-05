@@ -1,4 +1,0 @@
----
-title: "gants"
-name: "gants"
----

@@ -1,0 +1,91 @@
+<ul class="season-menu">
+	{#each $seasons as season}
+	<li on:click='ChangeSeason(season.year)'>
+		<p class:selected="$selectedSeason == season.year">{season.year}</p>
+	</li>
+	{/each}
+</ul>
+<div class="competition">
+	{#each $seasons as season}
+	{#if season.year == $selectedSeason}
+	<div class="ranking">
+		<p class="title pad blue">Classement</p>
+		<Rankings rankings={season.rankings} />
+	</div>
+	<div class="results">
+		<p class="title pad blue">Resultats</p>
+		<Results results={season.results.reverse()} />
+	</div>
+	{/if}
+	{/each}
+</div>
+
+
+<style>
+  .competition {
+    text-align: center;
+  }
+
+  .ranking {
+    margin-bottom: 50px;
+  }
+
+  .season-menu {
+    align-self: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    color: hsl(203, 15%, 20%);
+    background-color: transparent;
+  }
+  p:hover {
+    color: hsl(220, 37%, 35%);
+    background-color: transparent;
+  }
+  .pad {
+    padding-bottom: 30px;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .blue {
+    color: hsl(220, 45%, 45%);
+  }
+  .selected {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(220, 37%, 45%);
+    background-color: transparent;
+  }
+  .selected:hover {
+    color: hsl(220, 37%, 45%);
+    background-color: transparent;
+  }
+</style>
+
+	<script>
+  import Rankings from "./Rankings.html";
+  import Results from "./Results.html";
+  import store from "./store.js";
+
+  export default {
+    store: () => store,
+    components: {
+      Rankings,
+      Results
+    },
+    methods: {
+      ChangeSeason(x) {
+        store.set({ selectedSeason: x });
+      }
+    }
+  };
+</script>

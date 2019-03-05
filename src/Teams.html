@@ -1,0 +1,34 @@
+<div class="team-container">
+	{#each $teams as team}
+	<div class="team">
+		<Team team={team} />
+	</div>
+	{/each}
+</div>
+<script>
+  import Team from "./Team.html";
+  import store from "./store.js";
+
+  export default {
+    store: () => store,
+    components: {
+      Team
+    }
+  };
+</script>
+
+<style>
+  .team-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .team {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

@@ -1,0 +1,26 @@
+<ul class="schedule-list">
+	{#each schedules as schedule}
+	<Schedule schedule={schedule} />
+	{/each}
+</ul>
+
+<script>
+  import Schedule from "./Schedule.html";
+  export default {
+    components: {
+      Schedule
+    }
+  };
+</script>
+
+<style>
+  .schedule-list {
+    padding: 5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-bottom: 24px;
+    margin-left: 16px;
+  }
+</style>

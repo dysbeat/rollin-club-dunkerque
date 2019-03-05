@@ -1,0 +1,65 @@
+<div class="container">
+	<p class="title pad blue">{team.name}</p>
+	<div class="description">
+		<p class="gray">{team.description}</p>
+		{#if team.name == 'Enfants loisir'}
+		<p class="light-gray">Pret de materiel possible.</p>
+		{/if}
+	</div>
+	<div class='schedules'>
+		<p class="title gray">Horaires</p>
+		<Schedules schedules={team.schedules} />
+	</div>
+	<p class="title gray">Equipement</p>
+	<Gears gears={team.gears} />
+</div>
+
+<script>
+	import Gears from "./Gears.html";
+	import Schedules from "./Schedules.html";
+	export default {
+	  components: {
+	    Gears,
+	    Schedules
+	  }
+	};
+</script>
+
+<style>
+  * {
+    text-align: center;
+  }
+  .container {
+    padding-bottom: 72px;
+  }
+
+  .pad {
+    padding-bottom: 10px;
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 400;
+    height: 96px;
+  }
+
+  .schedules {
+    height: 72px;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .blue {
+    color: hsl(220, 45%, 45%);
+  }
+
+  .gray {
+    color: hsl(203, 15%, 20%);
+  }
+
+  .light-gray {
+    color: hsl(203, 15%, 47%);
+  }
+</style>

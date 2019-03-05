@@ -1,0 +1,130 @@
+<nav role="navigation" class="navbar">
+	<div class="container" on:click='OpenMenu(this)'>
+		<div class='bar first {visible  ? "change" : ""}'></div>
+		<div class='bar second {visible ? "change" : ""}'></div>
+		<div class='bar third {visible ? "change" : ""}'></div>
+
+		<ul class='menu {visible  ? "change" : ""}'>
+			{#each $pages as page}
+			<li on:click='ChangePage(page.link)'>
+				<p class:selected="$selectedPage == page.link">{page.name}</p>
+			</li>
+			{/each}
+		</ul>
+	</div>
+</nav>
+
+<script>
+  import store from "./store.js";
+  export default {
+    store: () => store,
+    data() {
+      return {
+        visible: false
+      };
+    },
+    methods: {
+      OpenMenu(x) {
+        this.set({ visible: !this.get().visible });
+      },
+      ChangePage(x) {
+        store.set({ selectedPage: x });
+      }
+    }
+  };
+</script>
+
+<style>
+  .navbar {
+    background-color: transparent;
+  }
+
+  ul {
+    background-color: transparent;
+  }
+
+  li {
+    background-color: transparent;
+  }
+
+  p {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    color: hsl(203, 15%, 20%);
+    background-color: transparent;
+  }
+
+  p:hover {
+    color: hsl(220, 37%, 35%);
+    background-color: transparent;
+  }
+
+  .selected {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(220, 37%, 45%);
+    background-color: transparent;
+  }
+
+  .selected:hover {
+    color: hsl(220, 37%, 45%);
+    background-color: transparent;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 5px;
+    background-color: transparent;
+  }
+
+  .bar {
+    visibility: hidden;
+  }
+
+  .menu {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    background-color: transparent;
+  }
+
+  @media screen and (min-device-width: 0px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .bar {
+      visibility: visible;
+
+      width: 35px;
+      height: 5px;
+      margin-top: 6px;
+      transition: 0.4s;
+      background-color: hsl(220, 37%, 35%);
+    }
+
+    .menu {
+      flex-direction: column;
+      padding: 10px;
+
+      opacity: 0;
+      height: 0px;
+    }
+
+    .first.change {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      visibility: hidden;
+    }
+    .third.change {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+      visibility: hidden;
+    }
+
+    .menu.change {
+      height: auto;
+      opacity: 100;
+    }
+  }
+</style>

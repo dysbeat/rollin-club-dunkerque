@@ -1,4 +1,0 @@
----
-title: "coudieres"
-name: "coudières"
----

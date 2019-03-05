@@ -1,0 +1,24 @@
+<ul class="gear-list">
+	{#each gears as gear}
+	<Gear gear={gear} />
+	{/each}
+</ul>
+
+<script>
+  import Gear from "./Gear.html";
+
+  export default {
+    components: {
+      Gear
+    }
+  };
+</script>
+<style>
+  .gear-list {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-left: 16px;
+  }
+</style>

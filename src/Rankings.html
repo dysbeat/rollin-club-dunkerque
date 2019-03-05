@@ -1,0 +1,142 @@
+<div class="container">
+	<ul class="list">
+		{#each rankings.ranks as ranks, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{ranks}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.teams as team, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{team}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.points as points, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{points}</li>
+		{/each}
+	</ul>
+
+	{#if windowWidth > 1200 }
+	<ul class="list">
+		{#each rankings.played as played, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{played}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.wins as wins, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{wins}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.draws as draws, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{draws}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.loses as loses, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{loses}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.forfaited as forfaited, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{forfaited}</li>
+		{/each}
+	</ul>
+
+	<ul class="list">
+		{#each rankings.goals as goals, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{goals}</li>
+		{/each}
+	</ul>
+	<ul class="list">
+		{#each rankings.goalsAllowed as goalsAllowed, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{goalsAllowed}</li>
+		{/each}
+	</ul>
+	<ul class="list">
+		{#each rankings.goalsDiff as goalsDiff, index}
+		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{goalsDiff}</li>
+		{/each}
+	</ul>
+	{/if}
+</div>
+
+<script>
+  export default {
+    data() {
+      return {
+        dunkerqueIndex: -1,
+        windowWidth: window.screen.width
+      };
+    },
+    helpers: {
+      DunkerqueIndex(rankings, dunkerqueIndex) {
+        if (dunkerqueIndex == -1) {
+          for (var i = 0; i < rankings.teams.length; i++) {
+            if (rankings.teams[i] == "Dunkerque") {
+              dunkerqueIndex = i;
+              break;
+            }
+          }
+        }
+        return dunkerqueIndex;
+      }
+    }
+  };
+</script>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .child {
+    text-align: right;
+    padding-left: 10px;
+    color: hsl(203, 15%, 20%);
+  }
+
+  .child:first-child {
+    font-weight: 600;
+  }
+
+  .child:nth-child(even) {
+    color: hsl(203, 15%, 30%);
+  }
+  .child:nth-child(odd) {
+    color: hsl(203, 15%, 10%);
+  }
+
+  .highlight {
+    text-align: right;
+    padding-left: 10px;
+    color: hsl(220, 45%, 50%);
+  }
+
+  @media screen and (min-device-width: 0px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+      justify-content: left;
+    }
+    .list:nth-child(1) {
+      flex-grow: 0.2;
+    }
+    .list:nth-child(2) {
+      flex-grow: 0.05;
+    }
+    .list:nth-child(3) {
+      flex-grow: 0.5;
+    }
+  }
+</style>
