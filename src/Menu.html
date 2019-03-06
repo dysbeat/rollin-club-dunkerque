@@ -80,7 +80,7 @@
   }
 
   .bar {
-    visibility: hidden;
+    display: none;
   }
 
   .menu {
@@ -99,15 +99,19 @@
     background-color: transparent;
   }
 
-  @media screen and (min-device-width: 0px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (max-width: 768px) {
     .bar {
-      visibility: visible;
+      display: flex;
 
       width: 35px;
       height: 5px;
       margin-top: 6px;
       transition: 0.4s;
       background-color: hsl(220, 37%, 35%);
+    }
+
+    .third {
+      margin-bottom: 6px;
     }
 
     .menu {
@@ -119,6 +123,7 @@
 
       opacity: 0;
       height: 0px;
+      display: none;
     }
 
     .first.change {
@@ -133,6 +138,7 @@
     }
 
     .menu.change {
+      display: flex;
       height: auto;
       opacity: 100;
     }

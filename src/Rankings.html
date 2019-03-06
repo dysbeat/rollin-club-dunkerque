@@ -17,53 +17,51 @@
 		{/each}
 	</ul>
 
-	{#if windowWidth > 1200 }
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.played as played, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{played}</li>
 		{/each}
 	</ul>
 
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.wins as wins, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{wins}</li>
 		{/each}
 	</ul>
 
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.draws as draws, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{draws}</li>
 		{/each}
 	</ul>
 
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.loses as loses, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{loses}</li>
 		{/each}
 	</ul>
 
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.forfaited as forfaited, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{forfaited}</li>
 		{/each}
 	</ul>
 
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.goals as goals, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{goals}</li>
 		{/each}
 	</ul>
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.goalsAllowed as goalsAllowed, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{goalsAllowed}</li>
 		{/each}
 	</ul>
-	<ul class="list">
+	<ul class="list show">
 		{#each rankings.goalsDiff as goalsDiff, index}
 		<li class='{ DunkerqueIndex(rankings, dunkerqueIndex) == index ? "highlight" : "child" }'>{goalsDiff}</li>
 		{/each}
 	</ul>
-	{/if}
 </div>
 
 <script>
@@ -139,7 +137,7 @@
     color: hsl(220, 45%, 50%);
   }
 
-  @media screen and (min-device-width: 0px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (max-width: 768px) {
     .container {
       justify-content: left;
     }
@@ -151,6 +149,10 @@
     }
     .list:nth-child(3) {
       flex-grow: 0.5;
+    }
+
+    .show {
+      display: none;
     }
   }
 </style>
