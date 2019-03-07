@@ -13,30 +13,31 @@
 		 title="map" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 </section>
+<div class="container">
+	<div class="information">
 
-<div class="information">
-
-	<div class="team-container">
-		{#each $teams as team}
-		<section>
-			<p class="title">{team.name}</p>
-			<p class="team-description">{team.description}</p>
-			{#each team.schedules as schedule}
-			<p class="team-schedule">{schedule}</p>
+		<div class="team-container">
+			{#each $teams as team}
+			<section>
+				<p class="title">{team.name}</p>
+				<p class="team-description">{team.description}</p>
+				{#each team.schedules as schedule}
+				<p class="team-schedule">{schedule}</p>
+				{/each}
+			</section>
 			{/each}
-		</section>
-		{/each}
+		</div>
+
 	</div>
 
-</div>
-
-<div class="results">
-	<section>
-		<p class="title">Derniers résultats</p>
-		{#each GetLastResults($seasons) as result}
-		<Result result={result} />
-		{/each}
-	</section>
+	<div class="results">
+		<section>
+			<p class="title">Derniers résultats</p>
+			{#each GetLastResults($seasons) as result}
+			<Result result={result} />
+			{/each}
+		</section>
+	</div>
 </div>
 
 <style>
@@ -52,8 +53,25 @@
     color: hsl(220, 37%, 45%);
     padding-top: 20px;
   }
+
   section {
     padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .container {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    width: 100%;
   }
 
   .team-container {
@@ -66,6 +84,7 @@
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
   }
 
   .team {
@@ -94,12 +113,16 @@
   }
 
   .information {
-    width: 400px;
-    float: left;
+    width: 100%;
   }
   .results {
-    width: 400px;
-    float: right;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 968px) {
+    .container {
+      flex-wrap: wrap;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -109,11 +132,9 @@
     .information {
       width: 100%;
       padding-bottom: 50px;
-      align-self: center;
     }
     .results {
       width: 100%;
-      align-self: center;
     }
   }
 </style>
