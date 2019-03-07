@@ -52,38 +52,43 @@ var steps = [
     function () {
         var rankings = page.evaluate(function () {
             var tables = document.getElementsByTagName("table");
-            var rankings = {
-                ranks: ['Pl'],
-                teams: ['Equipe'],
-                points: ['Pts'],
-                played: ["J."],
-                wins: ['V.'],
-                draws: ['E.'],
-                loses: ['P.'],
-                forfaited: ['F.'],
-                goals: ['buts'],
-                goalsAllowed: ['BE.'],
-                goalsDiff: ['diff.'],
-            }
+            var rankings = [
+                {
+                    rank: 'Pl',
+                    teams: 'Equipe',
+                    points: 'Pts',
+                    played: "J.",
+                    wins: 'V.',
+                    draws: 'E.',
+                    loses: 'P.',
+                    forfaited: 'F.',
+                    goals: 'buts',
+                    goalsAllowed: 'BE.',
+                    goalsDiff: 'diff.',
+                }]
             for (var i = 0; i < tables.length; i++) {
                 for (var j = 1; j < tables[i].rows.length; j++) {
-                    rankings.ranks.push(tables[i].rows[j].cells[0].innerText.trim());
-                    rankings.teams.push(tables[i].rows[j].cells[1].innerText.trim().replace(" PN", ""));
-                    rankings.points.push(tables[i].rows[j].cells[2].innerText.trim());
-                    rankings.played.push(tables[i].rows[j].cells[3].innerText.trim());
-                    rankings.wins.push(tables[i].rows[j].cells[4].innerText.trim());
-                    rankings.draws.push(tables[i].rows[j].cells[5].innerText.trim());
-                    rankings.loses.push(tables[i].rows[j].cells[6].innerText.trim());
-                    rankings.forfaited.push(tables[i].rows[j].cells[7].innerText.trim());
-                    rankings.goals.push(tables[i].rows[j].cells[8].innerText.trim());
-                    rankings.goalsAllowed.push(tables[i].rows[j].cells[9].innerText.trim());
-                    rankings.goalsDiff.push(tables[i].rows[j].cells[10].innerText.trim());
+                    rankings.push(
+                        {
+                            rank: tables[i].rows[j].cells[0].innerText.trim(),
+                            teams: tables[i].rows[j].cells[1].innerText.trim().replace(" PN", ""),
+                            points: tables[i].rows[j].cells[2].innerText.trim(),
+                            played: tables[i].rows[j].cells[3].innerText.trim(),
+                            wins: tables[i].rows[j].cells[4].innerText.trim(),
+                            draws: tables[i].rows[j].cells[5].innerText.trim(),
+                            loses: tables[i].rows[j].cells[6].innerText.trim(),
+                            forfaited: tables[i].rows[j].cells[7].innerText.trim(),
+                            goals: tables[i].rows[j].cells[8].innerText.trim(),
+                            goalsAllowed: tables[i].rows[j].cells[9].innerText.trim(),
+                            goalsDiff: tables[i].rows[j].cells[10].innerText.trim(),
+                        }
+                    )
                 }
             }
             return rankings
         });
         console.log("rankings: " + JSON.stringify(rankings));
-        var filename = 'rankings' + season + '.json';
+        var filename = 'v2_rankings' + season + '.json';
         fs.write(filename, JSON.stringify(rankings), 'w');
     },
 

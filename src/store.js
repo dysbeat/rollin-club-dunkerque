@@ -71,28 +71,7 @@ export default new Store({
   seasons: [
     {
       year: "2018-2019",
-      rankings: {
-        draws: ["E.", "0", "0", "0", "1", "1", "0", "0"],
-        forfaited: ["F.", "0", "0", "0", "1", "0", "0", "0"],
-        goals: ["buts", "62", "68", "52", "82", "47", "54", "33"],
-        goalsAllowed: ["BE.", "24", "38", "43", "42", "68", "81", "102"],
-        goalsDiff: ["diff.", "38", "30", "9", "40", "-21", "-27", "-69"],
-        loses: ["P.", "1", "3", "3", "1", "4", "7", "7"],
-        played: ["J.", "9", "8", "8", "8", "7", "9", "7"],
-        points: ["Pts", "24", "15", "15", "14", "7", "6", "0"],
-        ranks: ["Pl", "1", "2", "3", "4", "5", "6", "7"],
-        teams: [
-          "Equipe",
-          "Amiens",
-          "Bethune",
-          "Pont de Metz",
-          "Dunkerque",
-          "Valenciennes",
-          "Boulogne sur Mer",
-          "Moreuil"
-        ],
-        wins: ["V.", "8", "5", "5", "5", "2", "2", "0"]
-      },
+      rankings: [{ "draws": "E.", "forfaited": "F.", "goals": "buts", "goalsAllowed": "BE.", "goalsDiff": "diff.", "loses": "P.", "played": "J.", "points": "Pts", "rank": "Pl", "teams": "Equipe", "wins": "V." }, { "draws": "0", "forfaited": "0", "goals": "72", "goalsAllowed": "26", "goalsDiff": "46", "loses": "1", "played": "10", "points": "27", "rank": "1", "teams": "Amiens", "wins": "9" }, { "draws": "1", "forfaited": "1", "goals": "93", "goalsAllowed": "47", "goalsDiff": "46", "loses": "1", "played": "10", "points": "20", "rank": "2", "teams": "Dunkerque", "wins": "7" }, { "draws": "0", "forfaited": "0", "goals": "80", "goalsAllowed": "44", "goalsDiff": "36", "loses": "3", "played": "9", "points": "18", "rank": "3", "teams": "Bethune", "wins": "6" }, { "draws": "0", "forfaited": "0", "goals": "52", "goalsAllowed": "43", "goalsDiff": "9", "loses": "3", "played": "8", "points": "15", "rank": "4", "teams": "Pont de Metz", "wins": "5" }, { "draws": "1", "forfaited": "0", "goals": "49", "goalsAllowed": "78", "goalsDiff": "-29", "loses": "5", "played": "8", "points": "7", "rank": "5", "teams": "Valenciennes", "wins": "2" }, { "draws": "0", "forfaited": "0", "goals": "59", "goalsAllowed": "87", "goalsDiff": "-28", "loses": "8", "played": "10", "points": "6", "rank": "6", "teams": "Boulogne sur Mer", "wins": "2" }, { "draws": "0", "forfaited": "1", "goals": "39", "goalsAllowed": "119", "goalsDiff": "-80", "loses": "8", "played": "9", "points": "-2", "rank": "7", "teams": "Moreuil", "wins": "0" }],
       results: [
         {
           day: "21-10-2018",
@@ -350,49 +329,7 @@ export default new Store({
     },
     {
       year: "2017-2018",
-      rankings: {
-        draws: ["E.", "2", "1", "0", "2", "0", "0", "1", "0"],
-        forfaited: ["F.", "0", "0", "0", "1", "0", "1", "2", "2"],
-        goals: ["buts", "141", "99", "108", "116", "44", "54", "69", "18"],
-        goalsAllowed: [
-          "BE.",
-          "39",
-          "44",
-          "56",
-          "69",
-          "124",
-          "79",
-          "96",
-          "142"
-        ],
-        goalsDiff: [
-          "diff.",
-          "102",
-          "55",
-          "52",
-          "47",
-          "-80",
-          "-25",
-          "-27",
-          "-124"
-        ],
-        loses: ["P.", "1", "2", "5", "2", "9", "6", "7", "9"],
-        played: ["J.", "14", "13", "13", "13", "13", "11", "12", "11"],
-        points: ["Pts", "35", "31", "24", "24", "12", "10", "3", "-4"],
-        ranks: ["Pl", "1", "2", "3", "4", "5", "6", "7", "8"],
-        teams: [
-          "Equipe",
-          "Camon",
-          "Bethune",
-          "Pont de Metz",
-          "Dunkerque",
-          "Boulogne sur Mer",
-          "Amiens",
-          "Valenciennes",
-          "Arras-Vyruce"
-        ],
-        wins: ["V.", "11", "10", "8", "8", "4", "4", "2", "0"]
-      },
+      rankings: [{ "draws": "E.", "forfaited": "F.", "goals": "buts", "goalsAllowed": "BE.", "goalsDiff": "diff.", "loses": "P.", "played": "J.", "points": "Pts", "rank": "Pl", "teams": "Equipe", "wins": "V." }, { "draws": "2", "forfaited": "0", "goals": "141", "goalsAllowed": "39", "goalsDiff": "102", "loses": "1", "played": "14", "points": "35", "rank": "1", "teams": "Camon", "wins": "11" }, { "draws": "1", "forfaited": "0", "goals": "99", "goalsAllowed": "44", "goalsDiff": "55", "loses": "2", "played": "13", "points": "31", "rank": "2", "teams": "Bethune", "wins": "10" }, { "draws": "0", "forfaited": "0", "goals": "108", "goalsAllowed": "56", "goalsDiff": "52", "loses": "5", "played": "13", "points": "24", "rank": "3", "teams": "Pont de Metz", "wins": "8" }, { "draws": "2", "forfaited": "1", "goals": "116", "goalsAllowed": "69", "goalsDiff": "47", "loses": "2", "played": "13", "points": "24", "rank": "4", "teams": "Dunkerque", "wins": "8" }, { "draws": "0", "forfaited": "0", "goals": "44", "goalsAllowed": "124", "goalsDiff": "-80", "loses": "9", "played": "13", "points": "12", "rank": "5", "teams": "Boulogne sur Mer", "wins": "4" }, { "draws": "0", "forfaited": "1", "goals": "54", "goalsAllowed": "79", "goalsDiff": "-25", "loses": "6", "played": "11", "points": "10", "rank": "6", "teams": "Amiens", "wins": "4" }, { "draws": "1", "forfaited": "2", "goals": "69", "goalsAllowed": "96", "goalsDiff": "-27", "loses": "7", "played": "12", "points": "3", "rank": "7", "teams": "Valenciennes", "wins": "2" }, { "draws": "0", "forfaited": "2", "goals": "18", "goalsAllowed": "142", "goalsDiff": "-124", "loses": "9", "played": "11", "points": "-4", "rank": "8", "teams": "Arras-Vyruce", "wins": "0" }],
       results: [
         {
           day: "29-10-2017",
@@ -848,27 +785,7 @@ export default new Store({
     },
     {
       year: "2016-2017",
-      rankings: {
-        draws: ["E.", "0", "0", "0", "0", "1", "1"],
-        forfaited: ["F.", "0", "0", "0", "0", "1", "0"],
-        goals: ["buts", "101", "46", "54", "18", "46", "21"],
-        goalsAllowed: ["BE.", "33", "36", "53", "37", "50", "77"],
-        goalsDiff: ["diff.", "68", "10", "1", "-19", "-4", "-56"],
-        loses: ["P.", "0", "3", "4", "3", "4", "7"],
-        played: ["J.", "10", "7", "8", "5", "8", "8"],
-        points: ["Pts", "30", "12", "12", "6", "5", "1"],
-        ranks: ["Pl", "1", "2", "3", "4", "5", "6"],
-        teams: [
-          "Equipe",
-          "Tourcoing",
-          "Camon",
-          "Pont de Metz",
-          "Amiens",
-          "Dunkerque",
-          "Boulogne sur Mer"
-        ],
-        wins: ["V.", "10", "4", "4", "2", "2", "0"]
-      },
+      rankings: [{ "draws": "E.", "forfaited": "F.", "goals": "buts", "goalsAllowed": "BE.", "goalsDiff": "diff.", "loses": "P.", "played": "J.", "points": "Pts", "rank": "Pl", "teams": "Equipe", "wins": "V." }, { "draws": "0", "forfaited": "0", "goals": "101", "goalsAllowed": "33", "goalsDiff": "68", "loses": "0", "played": "10", "points": "30", "rank": "1", "teams": "Tourcoing", "wins": "10" }, { "draws": "0", "forfaited": "0", "goals": "46", "goalsAllowed": "36", "goalsDiff": "10", "loses": "3", "played": "7", "points": "12", "rank": "2", "teams": "Camon", "wins": "4" }, { "draws": "0", "forfaited": "0", "goals": "54", "goalsAllowed": "53", "goalsDiff": "1", "loses": "4", "played": "8", "points": "12", "rank": "3", "teams": "Pont de Metz", "wins": "4" }, { "draws": "0", "forfaited": "0", "goals": "18", "goalsAllowed": "37", "goalsDiff": "-19", "loses": "3", "played": "5", "points": "6", "rank": "4", "teams": "Amiens", "wins": "2" }, { "draws": "1", "forfaited": "1", "goals": "46", "goalsAllowed": "50", "goalsDiff": "-4", "loses": "4", "played": "8", "points": "5", "rank": "5", "teams": "Dunkerque", "wins": "2" }, { "draws": "1", "forfaited": "0", "goals": "21", "goalsAllowed": "77", "goalsDiff": "-56", "loses": "7", "played": "8", "points": "1", "rank": "6", "teams": "Boulogne sur Mer", "wins": "0" }],
       results: [
         {
           day: "06-11-2016",
