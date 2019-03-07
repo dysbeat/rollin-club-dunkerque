@@ -14,6 +14,7 @@
     "svelte": "^2.13.5"
   },
   "scripts": {
+    "update-store": "phantomjs resources/update.js src/store.js.in src/store.js",
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
