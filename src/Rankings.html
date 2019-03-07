@@ -35,8 +35,10 @@
   }
   .container-child {
     width: 100%;
+    color: hsl(203, 15%, 30%);
   }
   .container-child:first-child {
+    font-size: 14px;
     font-weight: 600;
     color: hsl(203, 15%, 30%);
   }
@@ -53,19 +55,25 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    font-size: inherit;
     font-weight: inherit;
   }
   .list.highlight {
     color: hsl(220, 45%, 50%);
   }
 
+  .item:first-child {
+    min-width: 24px;
+  }
+
   .item {
-    min-width: 40px;
+    min-width: 48px;
     text-align: right;
+    font-size: inherit;
     font-weight: inherit;
   }
   .item.team {
-    min-width: 200px;
+    min-width: 176px;
   }
 
   @media screen and (max-width: 768px) {
