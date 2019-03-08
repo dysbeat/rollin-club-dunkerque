@@ -33,9 +33,7 @@
 	<div class="results">
 		<section>
 			<p class="title">Derniers résultats</p>
-			{#each GetLastResults($seasons) as result}
-			<Result result={result} />
-			{/each}
+			<Results results={GetLastResults($seasons)} />
 		</section>
 	</div>
 </div>
@@ -140,7 +138,7 @@
 </style>
 
 <script>
-  import Result from "./Result.html";
+  import Results from "./Results.html";
   import store from "./store.js";
 
   export default {
@@ -165,7 +163,7 @@
       }
     },
     components: {
-      Result
+      Results
     }
   };
 </script>
