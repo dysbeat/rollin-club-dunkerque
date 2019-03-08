@@ -1,16 +1,10 @@
-<div class="item">
-	<p class="info">{ MakeInfo(result) }</p>
-	<div class="result-container">
-		<div class="result-score-container result-score-container-a">
-			<p class='team team-a { result.ateam == "DUNKERQUE" ? "highlight" : ""}'>{ result.ateam }</p>
-			<p class='score { +result.ascore > +result.bscore ? "score-highlight" : ""}'>{ result.ascore }</p>
-		</div>
-		<p> | </p>
-		<div class="result-score-container result-score-container-b">
-			<p class='score { +result.bscore > +result.ascore ? "score-highlight" : ""}'>{ result.bscore }</p>
-			<p class='team team-b { result.bteam == "DUNKERQUE" ? "highlight" : ""}'>{ result.bteam }</p>
-		</div>
-	</div>
+<p class="info">{ MakeInfo(result) }</p>
+<div class="container">
+	<p class='team a { result.ateam == "DUNKERQUE" ? "highlight" : ""}'>{ result.ateam }</p>
+	<p class='score a { +result.ascore > +result.bscore ? "highlight" : ""}'>{ result.ascore }</p>
+	<p> | </p>
+	<p class='score b { +result.bscore > +result.ascore ? "highlight" : ""}'>{ result.bscore }</p>
+	<p class='team b { result.bteam == "DUNKERQUE" ? "highlight" : ""}'>{ result.bteam }</p>
 </div>
 
 <script>
@@ -30,85 +24,62 @@
 
 <style>
   p {
-    color: hsl(203, 15%, 20%);
+    font-size: 14px;
+    color: hsl(203, 15%, 30%);
   }
+
   .info {
     text-align: center;
-    font-size: 14px;
     font-weight: 400;
     color: hsl(203, 15%, 47%);
   }
 
+  .container {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .team {
-    width: 150px;
-    height: max-content;
-    justify-self: center;
+    flex-basis: 40%;
     font-size: 14px;
   }
 
-  .team-a {
-    text-align: center;
-    align-self: right;
+  .team.a {
+    text-align: right;
   }
 
-  .team-b {
-    text-align: center;
-    align-self: left;
+  .team.b {
+    text-align: left;
   }
 
-  .highlight {
+  .team.highlight {
     color: hsl(220, 45%, 45%);
   }
 
   .score {
-    font-size: 14px;
-    padding-left: 5px;
+    min-width: 24px;
+  }
+
+  .score.a {
     padding-right: 5px;
+    text-align: right;
   }
 
-  .score-highlight {
+  .score.b {
+    padding-left: 5px;
+    text-align: left;
+  }
+
+  .score.highlight {
     text-decoration: underline;
-  }
-
-  .item {
-    /* padding: 10px 0; */
-    padding-bottom: 40px;
-  }
-
-  /* Result */
-  .result-container {
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    justify-content: center;
-  }
-
-  .result-score-container {
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    align-content: center;
-    width: 45%;
-  }
-
-  .result-score-container-a {
-    justify-content: right;
-  }
-
-  .result-score-container-b {
-    justify-content: left;
-  }
-
-  .result-info-container {
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    justify-content: flex-start;
   }
 </style>
