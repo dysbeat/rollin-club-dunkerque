@@ -1,10 +1,10 @@
-<nav role="navigation" class="navbar">
+<nav role="navigation">
 	<div class="container" on:click='OpenMenu(this)'>
 		<div class='bar first {visible  ? "change" : ""}'></div>
 		<div class='bar second {visible ? "change" : ""}'></div>
 		<div class='bar third {visible ? "change" : ""}'></div>
 
-		<ul class='menu {visible  ? "change" : ""}'>
+		<ul class='row-container menu {visible  ? "change" : ""}'>
 			{#each $pages as page}
 			<li on:click='ChangePage(page.link)'>
 				<p class:selected="$selectedPage == page.link">{page.name}</p>
@@ -35,48 +35,31 @@
 </script>
 
 <style>
-  .navbar {
-    background-color: transparent;
-  }
-
-  ul {
-    background-color: transparent;
-  }
-
-  li {
-    background-color: transparent;
-  }
-
   p {
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
     padding: 10px;
     color: hsl(203, 15%, 20%);
-    background-color: transparent;
   }
 
   p:hover {
     color: hsl(220, 37%, 35%);
-    background-color: transparent;
   }
 
   .selected {
     font-size: 14px;
     font-weight: 400;
     color: hsl(220, 37%, 45%);
-    background-color: transparent;
   }
 
   .selected:hover {
     color: hsl(220, 37%, 45%);
-    background-color: transparent;
   }
 
   .container {
     width: 100%;
     margin-left: 5px;
-    background-color: transparent;
   }
 
   .bar {
@@ -84,19 +67,7 @@
   }
 
   .menu {
-    height: max-content;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
     justify-content: center;
-    list-style-type: none;
-    background-color: transparent;
   }
 
   @media screen and (max-width: 768px) {
@@ -119,10 +90,7 @@
       -moz-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 10px;
 
-      opacity: 0;
-      height: 0px;
       display: none;
     }
 
@@ -140,7 +108,6 @@
     .menu.change {
       display: flex;
       height: auto;
-      opacity: 100;
     }
   }
 </style>

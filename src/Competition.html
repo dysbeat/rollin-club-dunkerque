@@ -1,4 +1,4 @@
-<ul class="season-menu">
+<ul class="row-container menu">
 	{#each $seasons as season}
 	<li on:click='ChangeSeason(season.year)'>
 		<p class:selected="$selectedSeason == season.year">{season.year}</p>
@@ -30,31 +30,20 @@
     margin-bottom: 50px;
   }
 
-  .season-menu {
+  .menu {
     align-self: center;
-    padding: 5px;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
     justify-content: center;
-    list-style-type: none;
+    padding: 5px;
   }
+
   p {
     font-size: 14px;
     font-weight: 400;
     padding: 10px;
     color: hsl(203, 15%, 20%);
-    background-color: transparent;
   }
   p:hover {
     color: hsl(220, 37%, 35%);
-    background-color: transparent;
   }
   .pad {
     padding-bottom: 30px;
@@ -70,11 +59,9 @@
     font-size: 14px;
     font-weight: 400;
     color: hsl(220, 37%, 45%);
-    background-color: transparent;
   }
   .selected:hover {
     color: hsl(220, 37%, 45%);
-    background-color: transparent;
   }
 </style>
 

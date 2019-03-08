@@ -1,5 +1,5 @@
 <p class="info">{ MakeInfo(result) }</p>
-<div class="container">
+<div class="row-container result">
 	<p class='team a { result.ateam == "DUNKERQUE" ? "highlight" : ""}'>{ result.ateam }</p>
 	<p class='score a { +result.ascore > +result.bscore ? "highlight" : ""}'>{ result.ascore }</p>
 	<p> | </p>
@@ -34,16 +34,7 @@
     color: hsl(203, 15%, 47%);
   }
 
-  .container {
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+  .result {
     justify-content: center;
     align-items: center;
   }
