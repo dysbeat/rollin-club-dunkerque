@@ -1,7 +1,7 @@
 <ul>
 	{#each rankings as ranking}
 	<li class="gray rank">
-		<ul class="row-container list { ranking.teams == 'Dunkerque' ? 'highlight' : '' }">
+		<ul class="row-container list { ranking.teams == 'Dunkerque' ? 'blue' : '' }">
 			<li class='item'>{ranking.rank}</li>
 			<li class='item team'>{ranking.teams}</li>
 			<li class='item'>{ranking.points}</li>
@@ -28,9 +28,6 @@
     justify-content: center;
     font-size: inherit;
     font-weight: inherit;
-  }
-  .list.highlight {
-    color: hsl(220, 45%, 50%);
   }
 
   .item:first-child {
