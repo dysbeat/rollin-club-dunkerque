@@ -221,11 +221,11 @@ html { font-family: 'Inter', sans-serif; }
 
 .choice.selected {
 	cursor: auto;
-	color: hsl(220, 37%, 45%);
+	color: hsl(220, 37%, 50%);
 }
 
 .choice.selected:hover {
-	color: hsl(220, 37%, 45%);
+	color: hsl(220, 37%, 50%);
 }
 
 .large {
@@ -241,11 +241,11 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 .light-gray {
-	color: hsl(203, 15%, 45%);
+	color: hsl(203, 15%, 50%);
 }
 
 .blue {
-	color: hsl(220, 45%, 45%);
+	color: hsl(220, 45%, 50%);
 }
 
 .light-blue {
