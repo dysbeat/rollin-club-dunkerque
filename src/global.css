@@ -245,9 +245,9 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 .blue {
-	color: hsl(220, 45%, 50%);
+	color: hsl(220, 45%, 45%);
 }
 
 .light-blue {
-	color: hsl(220, 45%, 55%);
+	color: hsl(220, 45%, 60%);
 }
