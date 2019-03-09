@@ -1,7 +1,7 @@
 <ul>
 	{#each rankings as ranking}
 	<li class="gray rank">
-		<ul class="row-container list { ranking.teams == 'Dunkerque' ? 'blue' : '' }">
+		<ul class="rows list { ranking.teams == 'Dunkerque' ? 'blue' : '' }">
 			<li class='item'>{ranking.rank}</li>
 			<li class='item team'>{ranking.teams}</li>
 			<li class='item'>{ranking.points}</li>

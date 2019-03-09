@@ -4,7 +4,7 @@
 		<div class='bar second {visible ? "change" : ""}'></div>
 		<div class='bar third {visible ? "change" : ""}'></div>
 
-		<ul class='row-container menu {visible  ? "change" : ""}'>
+		<ul class='rows menu {visible  ? "change" : ""}'>
 			{#each $pages as page}
 			<li on:click='ChangePage(page.link)'>
 				<p class='choice {$selectedPage == page.link ? "selected" : ""}'>{page.name}</p>

@@ -1,4 +1,4 @@
-<ul class="row-container menu">
+<ul class="rows menu">
 	{#each $seasons as season}
 	<li on:click='ChangeSeason(season.year)'>
 		<p class='choice {$selectedSeason == season.year ? "selected" : ""}'>{season.year}</p>
