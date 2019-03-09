@@ -244,6 +244,10 @@ html { font-family: 'Inter', sans-serif; }
 	color: hsl(203, 15%, 50%);
 }
 
+.dark-blue {
+	color: hsl(220, 37%, 35%);
+}
+
 .blue {
 	color: hsl(220, 45%, 45%);
 }
