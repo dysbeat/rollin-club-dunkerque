@@ -1,6 +1,6 @@
 <ul>
 	{#each rankings as ranking}
-	<li class="rank">
+	<li class="gray rank">
 		<ul class="row-container list { ranking.teams == 'Dunkerque' ? 'highlight' : '' }">
 			<li class='item'>{ranking.rank}</li>
 			<li class='item team'>{ranking.teams}</li>
@@ -20,7 +20,6 @@
 
 <style>
   .rank {
-    color: hsl(203, 15%, 30%);
   }
   .rank:first-child {
     font-size: 14px;

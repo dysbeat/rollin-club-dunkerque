@@ -1,7 +1,7 @@
 <ul class="row-container menu">
 	{#each $seasons as season}
 	<li on:click='ChangeSeason(season.year)'>
-		<p class:selected="$selectedSeason == season.year">{season.year}</p>
+		<p class='choice {$selectedSeason == season.year ? "selected" : ""}'>{season.year}</p>
 	</li>
 	{/each}
 </ul>
@@ -9,11 +9,11 @@
 	{#each $seasons as season}
 	{#if season.year == $selectedSeason}
 	<div class="ranking">
-		<p class="title pad blue">Classement</p>
+		<p class="large blue title pad">Classement</p>
 		<Rankings rankings={season.rankings} />
 	</div>
 	<div class="results">
-		<p class="title pad blue">Resultats</p>
+		<p class="large blue title pad">Resultats</p>
 		<Results results={season.results.reverse()} />
 	</div>
 	{/if}
@@ -37,23 +37,13 @@
   }
 
   p {
-    font-size: 14px;
-    font-weight: 400;
     padding: 10px;
-    color: hsl(203, 15%, 20%);
   }
   p:hover {
     color: hsl(220, 37%, 35%);
   }
   .pad {
     padding-bottom: 30px;
-  }
-  .title {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .blue {
-    color: hsl(220, 45%, 45%);
   }
   .selected {
     font-size: 14px;

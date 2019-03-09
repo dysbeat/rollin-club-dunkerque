@@ -202,3 +202,52 @@ html { font-family: 'Inter', sans-serif; }
     justify-items: center;
     align-self: center;
 }
+
+.title {
+	font-weight: 600;
+}
+
+.choice {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px;
+	color: hsl(203, 15%, 20%);
+}
+
+.choice:hover {
+	color: hsl(220, 37%, 35%);
+}
+
+.choice.selected {
+	cursor: auto;
+	color: hsl(220, 37%, 45%);
+}
+
+.choice.selected:hover {
+	color: hsl(220, 37%, 45%);
+}
+
+.large {
+	font-size: 16px;
+}
+
+.dark-gray {
+	color: hsl(203, 15%, 20%);
+}
+
+.gray {
+	color: hsl(203, 15%, 30%);
+}
+
+.light-gray {
+	color: hsl(203, 15%, 45%);
+}
+
+.blue {
+	color: hsl(220, 45%, 45%);
+}
+
+.light-blue {
+	color: hsl(220, 45%, 55%);
+}

@@ -1,9 +1,9 @@
 <section>
-	<p class="club">Roll'in club dunkerque</p>
+	<p class="large blue title">Roll'in club dunkerque</p>
 </section>
 
 <section>
-	<p class="title">Adresse</p>
+	<p class="dark-gray title">Adresse</p>
 	<p>Salle de sport du lycée de l'Europe</p>
 	<p>809 Rue du Banc vert</p>
 	<p>59640 Dunkerque</p>
@@ -18,17 +18,17 @@
 	<div class="column-container teams">
 		{#each $teams as team}
 		<section>
-			<p class="title">{team.name}</p>
-			<p class="team-description">{team.description}</p>
+			<p class="dark-gray title">{team.name}</p>
+			<p class="light-gray">{team.description}</p>
 			{#each team.schedules as schedule}
-			<p class="team-schedule">{schedule}</p>
+			<p class="dark-gray">{schedule}</p>
 			{/each}
 		</section>
 		{/each}
 	</div>
 
 	<section class="results">
-		<p class="title">Derniers résultats</p>
+		<p class="dark-gray title">Derniers résultats</p>
 		<Results results={GetLastResults($seasons)} />
 	</section>
 </div>
@@ -38,13 +38,6 @@
     display: inline-flex;
     justify-content: center;
     width: 100%;
-  }
-
-  .club {
-    text-align: center;
-    font-weight: 600;
-    color: hsl(220, 37%, 45%);
-    padding-top: 20px;
   }
 
   section {
@@ -62,18 +55,8 @@
     margin-bottom: 4px;
   }
 
-  .team-schedule {
-    color: hsl(203, 15%, 20%);
-  }
-
   p {
     text-align: center;
-    color: hsl(203, 15%, 47%);
-  }
-
-  .title {
-    font-weight: 600;
-    color: hsl(203, 15%, 20%);
   }
 
   .teams {

@@ -1,5 +1,5 @@
 <div class="container">
-	<p class="title pad blue">{team.name}</p>
+	<p class="blue title pad">{team.name}</p>
 	<div class="description">
 		<p class="gray">{team.description}</p>
 		{#if team.name == 'Enfants loisir'}
@@ -7,10 +7,10 @@
 		{/if}
 	</div>
 	<div class='schedules'>
-		<p class="title gray">Horaires</p>
+		<p class="gray title">Horaires</p>
 		<Schedules schedules={team.schedules} />
 	</div>
-	<p class="title gray">Equipement</p>
+	<p class="gray title">Equipement</p>
 	<Gears gears={team.gears} />
 </div>
 
@@ -45,21 +45,5 @@
 
   .schedules {
     height: 72px;
-  }
-
-  .title {
-    font-weight: 600;
-  }
-
-  .blue {
-    color: hsl(220, 45%, 45%);
-  }
-
-  .gray {
-    color: hsl(203, 15%, 20%);
-  }
-
-  .light-gray {
-    color: hsl(203, 15%, 47%);
   }
 </style>

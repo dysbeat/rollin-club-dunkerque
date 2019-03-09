@@ -7,7 +7,7 @@
 		<ul class='row-container menu {visible  ? "change" : ""}'>
 			{#each $pages as page}
 			<li on:click='ChangePage(page.link)'>
-				<p class:selected="$selectedPage == page.link">{page.name}</p>
+				<p class='choice {$selectedPage == page.link ? "selected" : ""}'>{page.name}</p>
 			</li>
 			{/each}
 		</ul>
@@ -35,28 +35,6 @@
 </script>
 
 <style>
-  p {
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px;
-    color: hsl(203, 15%, 20%);
-  }
-
-  p:hover {
-    color: hsl(220, 37%, 35%);
-  }
-
-  .selected {
-    font-size: 14px;
-    font-weight: 400;
-    color: hsl(220, 37%, 45%);
-  }
-
-  .selected:hover {
-    color: hsl(220, 37%, 45%);
-  }
-
   .container {
     width: 100%;
     margin-left: 5px;
