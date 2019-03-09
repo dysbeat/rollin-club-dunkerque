@@ -159,6 +159,57 @@ for (var idx = 0; idx < pages.length; idx++) {
     });
 }
 
+for (var idx = 0; idx < pages.length; idx++) {
+    var pageToLoad = urlBase + 'buteurs/' + pages[idx].page
+    var season = pages[idx].season;
+    steps.push({
+        args: { pageToLoad },
+        call: function (x) {
+            console.log(x.pageToLoad)
+            page.open(x.pageToLoad)
+        }
+    });
+
+    steps.push({
+        args: { season }, call: function (x) {
+            var season = x.season;
+            var players = page.evaluate(function () {
+                var tables = document.getElementsByTagName("table");
+                var players = [
+                    {
+                        rank: 'Pl',
+                        player: 'Joueur',
+                        team: 'Equipe',
+                        games: "Matchs",
+                        goals: 'Buts',
+                        passes: 'Passes',
+                        points: 'Points',
+                        box: 'Pénalités',
+                    }
+                ]
+                for (var i = 0; i < tables.length; i++) {
+                    for (var j = 1; j < tables[i].rows.length; j++) {
+                        players.push({
+                            rank: tables[i].rows[j].cells[0].innerText.trim(),
+                            players: tables[i].rows[j].cells[1].innerText.trim(),
+                            teams: tables[i].rows[j].cells[2].innerText.trim().replace(" PN", ""),
+                            games: tables[i].rows[j].cells[3].innerText.trim(),
+                            goals: tables[i].rows[j].cells[4].innerText.trim(),
+                            passes: tables[i].rows[j].cells[5].innerText.trim(),
+                            points: tables[i].rows[j].cells[6].innerText.trim(),
+                            box: tables[i].rows[j].cells[7].innerText.trim().replace(" \"", ""),
+                        });
+                    }
+                }
+                return players
+            });
+            var toReplace = '\|players:' + season + '\|';
+            console.log('toReplace:' + toReplace);
+            content = content.replace(toReplace, JSON.stringify(players));
+        }
+    });
+}
+
 steps.push({
     call: function () {
         console.log(content);
