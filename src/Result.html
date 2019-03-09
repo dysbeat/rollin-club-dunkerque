@@ -1,10 +1,10 @@
-<p class="info">{ MakeInfo(result) }</p>
+<p class="info light-gray">{ MakeInfo(result) }</p>
 <div class="row-container result">
-	<p class='team a { result.ateam == "DUNKERQUE" ? "highlight" : ""}'>{ result.ateam }</p>
-	<p class='score a { +result.ascore > +result.bscore ? "highlight" : ""}'>{ result.ascore }</p>
-	<p> | </p>
-	<p class='score b { +result.bscore > +result.ascore ? "highlight" : ""}'>{ result.bscore }</p>
-	<p class='team b { result.bteam == "DUNKERQUE" ? "highlight" : ""}'>{ result.bteam }</p>
+	<p class='gray team a { result.ateam == "DUNKERQUE" ? "highlight" : ""}'>{ result.ateam }</p>
+	<p class='gray score a { +result.ascore > +result.bscore ? "highlight" : ""}'>{ result.ascore }</p>
+	<p class="gray"> | </p>
+	<p class='gray score b { +result.bscore > +result.ascore ? "highlight" : ""}'>{ result.bscore }</p>
+	<p class='gray team b { result.bteam == "DUNKERQUE" ? "highlight" : ""}'>{ result.bteam }</p>
 </div>
 
 <script>
@@ -25,13 +25,11 @@
 <style>
   p {
     font-size: 14px;
-    color: hsl(203, 15%, 30%);
   }
 
   .info {
     text-align: center;
     font-weight: 400;
-    color: hsl(203, 15%, 47%);
   }
 
   .result {
