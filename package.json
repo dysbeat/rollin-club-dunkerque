@@ -15,6 +15,8 @@
   },
   "scripts": {
     "update-store": "phantomjs update.js src/store.js.in src/store.js",
+    "deploy-dev": "git push dev master",
+    "deploy-prod": "git push prod master",
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
