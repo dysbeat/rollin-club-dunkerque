@@ -6,7 +6,7 @@
 	{/each}
 </ul>
 <script>
-  import Team from "./Team.html";
+  import Team from "./Team.svelte";
   import store from "../store.js";
 
   export default {

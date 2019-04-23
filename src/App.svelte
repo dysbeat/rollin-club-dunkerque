@@ -19,11 +19,11 @@
 </div>
 
 <script>
-		import Header from "./components/Header.html";
-		import Home from "./components/Home.html";
-		import Teams from "./components/Teams.html";
-		import Competition from "./components/Competition.html";
-		import Contact from "./components/Contact.html";
+		import Header from "./components/Header.svelte";
+		import Home from "./components/Home.svelte";
+		import Teams from "./components/Teams.svelte";
+		import Competition from "./components/Competition.svelte";
+		import Contact from "./components/Contact.svelte";
 		import store from "./store.js";
 
 		export default {

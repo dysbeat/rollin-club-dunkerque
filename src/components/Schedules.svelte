@@ -7,7 +7,7 @@
 </ul>
 
 <script>
-  import Schedule from "./Schedule.html";
+  import Schedule from "./Schedule.svelte";
 
   export default {
     components: {

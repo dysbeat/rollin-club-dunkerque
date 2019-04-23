@@ -41,8 +41,8 @@
 </style>
 
 <script>
-  import Rankings from "./Rankings.html";
-  import Results from "./Results.html";
+  import Rankings from "./Rankings.svelte";
+  import Results from "./Results.svelte";
   import store from "../store.js";
 
   export default {

@@ -470,9 +470,9 @@ var app = (function () {
 	  seasons: [
 	    {
 	      year: "2018-2019",
-	      rankings: [{"draws":"E.","forfaited":"F.","goals":"buts","goalsAllowed":"BE.","goalsDiff":"diff.","loses":"P.","played":"J.","points":"Pts","rank":"Pl","teams":"Equipe","wins":"V."},{"draws":"0","forfaited":"0","goals":"72","goalsAllowed":"26","goalsDiff":"46","loses":"1","played":"10","points":"27","rank":"1","teams":"Amiens","wins":"9"},{"draws":"0","forfaited":"0","goals":"89","goalsAllowed":"49","goalsDiff":"40","loses":"3","played":"10","points":"21","rank":"2","teams":"Bethune","wins":"7"},{"draws":"1","forfaited":"1","goals":"93","goalsAllowed":"47","goalsDiff":"46","loses":"1","played":"10","points":"20","rank":"3","teams":"Dunkerque","wins":"7"},{"draws":"0","forfaited":"0","goals":"57","goalsAllowed":"52","goalsDiff":"5","loses":"4","played":"9","points":"15","rank":"4","teams":"Pont de Metz","wins":"5"},{"draws":"1","forfaited":"0","goals":"58","goalsAllowed":"83","goalsDiff":"-25","loses":"5","played":"9","points":"10","rank":"5","teams":"Valenciennes","wins":"3"},{"draws":"0","forfaited":"0","goals":"64","goalsAllowed":"96","goalsDiff":"-32","loses":"9","played":"11","points":"6","rank":"6","teams":"Boulogne sur Mer","wins":"2"},{"draws":"0","forfaited":"1","goals":"39","goalsAllowed":"119","goalsDiff":"-80","loses":"8","played":"9","points":"-2","rank":"7","teams":"Moreuil","wins":"0"}],
-	      players: [{"box":"Pénalités","games":"Matchs","goals":"Buts","passes":"Passes","player":"Joueur","points":"Points","rank":"Pl","team":"Equipe"},{"box":"4 ' 00","games":"8","goals":"21","passes":"12","players":"ANTOINE JANOT","points":"33","rank":"1","teams":"Valenciennes"},{"box":"4 ' 00","games":"6","goals":"24","passes":"8","players":"LUCAS DUMERLIE","points":"32","rank":"2","teams":"Dunkerque"},{"box":"6 ' 00","games":"7","goals":"27","passes":"4","players":"REMY BOYTARD","points":"31","rank":"3","teams":"Moreuil"},{"box":"12 ' 00","games":"9","goals":"16","passes":"9","players":"CHRISTOPHE DEVAUCHELLE","points":"25","rank":"4","teams":"Bethune"},{"box":"6 ' 00","games":"10","goals":"16","passes":"7","players":"GABRIEL SPITZ","points":"23","rank":"","teams":"Bethune"},{"box":"4 ' 00","games":"9","goals":"15","passes":"8","players":"BENOIT ANDRE","points":"23","rank":"5","teams":"Amiens"},{"box":"8 ' 00","games":"9","goals":"9","passes":"14","players":"ARNAUD PEZE","points":"23","rank":"6","teams":"Amiens"},{"box":"2 ' 00","games":"8","goals":"15","passes":"5","players":"JULIEN CLIPET","points":"20","rank":"7","teams":"Boulogne sur Mer"},{"box":"30 ' 00","games":"9","goals":"14","passes":"6","players":"JONATHAN TEMBUYSER","points":"20","rank":"8","teams":"Bethune"},{"box":"2 ' 00","games":"8","goals":"9","passes":"10","players":"NICOLAS EYROLLES","points":"19","rank":"9","teams":"Dunkerque"},{"box":"4 ' 00","games":"8","goals":"11","passes":"6","players":"PHILIPPE TANGHE","points":"17","rank":"10","teams":"Dunkerque"},{"box":"2 ' 00","games":"8","goals":"8","passes":"9","players":"SEBASTIEN LUGAN JAMES","points":"17","rank":"11","teams":"Pont de Metz"},{"box":"10 ' 00","games":"9","goals":"12","passes":"4","players":"GREGOIRE KUBICKI","points":"16","rank":"12","teams":"Bethune"},{"box":"0 ' 00","games":"7","goals":"9","passes":"7","players":"JOHAN BIAUSQUE","points":"16","rank":"13","teams":"Boulogne sur Mer"},{"box":"16 ' 00","games":"9","goals":"7","passes":"9","players":"CYRIL LUGUET","points":"16","rank":"14","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"7","goals":"12","passes":"3","players":"ANTOINE DEMARET","points":"15","rank":"15","teams":"Pont de Metz"},{"box":"10 ' 00","games":"8","goals":"7","passes":"8","players":"GREGOIRE GIGUERE","points":"15","rank":"16","teams":"Bethune"},{"box":"0 ' 00","games":"3","goals":"11","passes":"3","players":"GAUTHIER CHEVALIER","points":"14","rank":"17","teams":"Valenciennes"},{"box":"16 ' 00","games":"9","goals":"10","passes":"3","players":"ANTHONY WALLET","points":"13","rank":"18","teams":"Amiens"},{"box":"2 ' 00","games":"8","goals":"7","passes":"6","players":"MAXIME BROUCKE","points":"13","rank":"19","teams":"Dunkerque"},{"box":"6 ' 00","games":"4","goals":"9","passes":"3","players":"JONATHAN BODEL","points":"12","rank":"20","teams":"Dunkerque"},{"box":"10 ' 00","games":"8","goals":"6","passes":"6","players":"NICOLAS PRAGNIACY","points":"12","rank":"21","teams":"Valenciennes"},{"box":"4 ' 00","games":"8","goals":"8","passes":"3","players":"NICOLAS BRUXELLE","points":"11","rank":"22","teams":"Pont de Metz"},{"box":"0 ' 00","games":"3","goals":"8","passes":"3","players":"VINCENT NAELS","points":"11","rank":"","teams":"Dunkerque"},{"box":"4 ' 00","games":"10","goals":"8","passes":"2","players":"LUC FOULARD","points":"10","rank":"","teams":"Bethune"},{"box":"6 ' 00","games":"7","goals":"7","passes":"3","players":"LAURENT BIENKOWSKI","points":"10","rank":"23","teams":"Valenciennes"},{"box":"8 ' 00","games":"8","goals":"7","passes":"3","players":"TONY LAGACHE","points":"10","rank":"","teams":"Boulogne sur Mer"},{"box":"2 ' 00","games":"5","goals":"7","passes":"3","players":"FRANCOIS MARTEEL","points":"10","rank":"","teams":"Dunkerque"},{"box":"4 ' 00","games":"6","goals":"5","passes":"5","players":"YAEL AYIKA","points":"10","rank":"24","teams":"Dunkerque"},{"box":"8 ' 00","games":"8","goals":"5","passes":"5","players":"GAEL DAMELINCOURT","points":"10","rank":"","teams":"Moreuil"},{"box":"8 ' 00","games":"11","goals":"7","passes":"2","players":"DAVID BILLET","points":"9","rank":"25","teams":"Boulogne sur Mer"},{"box":"10 ' 00","games":"8","goals":"7","passes":"2","players":"KENNY GERVOIS","points":"9","rank":"","teams":"Amiens"},{"box":"8 ' 00","games":"8","goals":"3","passes":"6","players":"MAXIME STEENKISTE","points":"9","rank":"26","teams":"Valenciennes"},{"box":"4 ' 00","games":"5","goals":"7","passes":"1","players":"FLORENT DELAPLACE","points":"8","rank":"27","teams":"Pont de Metz"},{"box":"4 ' 00","games":"7","goals":"5","passes":"3","players":"ALLAN CAMBERLEIN","points":"8","rank":"28","teams":"Dunkerque"},{"box":"6 ' 00","games":"7","goals":"5","passes":"3","players":"ANTHONY VINCENT","points":"8","rank":"","teams":"Bethune"},{"box":"2 ' 00","games":"9","goals":"4","passes":"4","players":"SULLIVAN DANTEN","points":"8","rank":"29","teams":"Pont de Metz"},{"box":"2 ' 00","games":"8","goals":"6","passes":"1","players":"NICOLAS MERLIN","points":"7","rank":"30","teams":"Amiens"},{"box":"14 ' 00","games":"11","goals":"5","passes":"2","players":"FAUSTIN FACOMPREZ","points":"7","rank":"31","teams":"Boulogne sur Mer"},{"box":"12 ' 00","games":"8","goals":"6","passes":"0","players":"CHRISTOPHER AMIET","points":"6","rank":"32","teams":"Amiens"},{"box":"18 ' 00","games":"8","goals":"4","passes":"2","players":"FLORIAN CARON","points":"6","rank":"33","teams":"Amiens"},{"box":"4 ' 00","games":"7","goals":"3","passes":"3","players":"CEDRIC FOUQUET","points":"6","rank":"34","teams":"Pont de Metz"},{"box":"10 ' 00","games":"8","goals":"2","passes":"4","players":"TANGUY PEPONAS","points":"6","rank":"35","teams":"Amiens"},{"box":"10 ' 00","games":"7","goals":"5","passes":"0","players":"MICKAEL LUGAN JAMES","points":"5","rank":"36","teams":"Pont de Metz"},{"box":"0 ' 00","games":"8","goals":"3","passes":"2","players":"NICOLAS RIDOUX","points":"5","rank":"37","teams":"Bethune"},{"box":"0 ' 00","games":"7","goals":"3","passes":"2","players":"ERWAN ROUDOT","points":"5","rank":"","teams":"Amiens"},{"box":"14 ' 00","games":"7","goals":"3","passes":"2","players":"VINCENT LUGAN JAMES","points":"5","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"5","goals":"2","passes":"3","players":"GAEL BATARD","points":"5","rank":"38","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"11","goals":"4","passes":"0","players":"BASTIEN FACOMPREZ","points":"4","rank":"39","teams":"Boulogne sur Mer"},{"box":"6 ' 00","games":"6","goals":"3","passes":"1","players":"MAXIME HARZIG","points":"4","rank":"40","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"3","goals":"3","passes":"1","players":"GUILLAUME DANTEN","points":"4","rank":"","teams":"Pont de Metz"},{"box":"16 ' 00","games":"8","goals":"3","passes":"1","players":"THOMAS EPIFANI","points":"4","rank":"","teams":"Boulogne sur Mer"},{"box":"4 ' 00","games":"7","goals":"2","passes":"2","players":"MATHIEU BOISSENOT","points":"4","rank":"41","teams":"Pont de Metz"},{"box":"4 ' 00","games":"10","goals":"2","passes":"2","players":"SEBASTIEN DELPLACE","points":"4","rank":"","teams":"Bethune"},{"box":"2 ' 00","games":"4","goals":"2","passes":"2","players":"FLORIAN NOEL","points":"4","rank":"","teams":"Moreuil"},{"box":"4 ' 00","games":"8","goals":"2","passes":"2","players":"YANNICK LENGLET","points":"4","rank":"","teams":"Amiens"},{"box":"8 ' 00","games":"9","goals":"2","passes":"2","players":"BENOIT FRONTY","points":"4","rank":"","teams":"Valenciennes"},{"box":"18 ' 00","games":"9","goals":"3","passes":"0","players":"FREDERIC TALMANT","points":"3","rank":"42","teams":"Valenciennes"},{"box":"0 ' 00","games":"7","goals":"2","passes":"1","players":"DAVID RENAUX","points":"3","rank":"43","teams":"Dunkerque"},{"box":"0 ' 00","games":"2","goals":"2","passes":"1","players":"FLORIAN VITTECOQ","points":"3","rank":"","teams":"Moreuil"},{"box":"22 ' 00","games":"10","goals":"2","passes":"1","players":"JEREMY BENARD","points":"3","rank":"","teams":"Bethune"},{"box":"2 ' 00","games":"3","goals":"2","passes":"1","players":"BASTIEN POUCET","points":"3","rank":"","teams":"Amiens"},{"box":"2 ' 00","games":"8","goals":"1","passes":"2","players":"FRANCOIS QUEMENER","points":"3","rank":"44","teams":"Valenciennes"},{"box":"0 ' 00","games":"3","goals":"0","passes":"3","players":"MATTHIEU NISON","points":"3","rank":"45","teams":"Dunkerque"},{"box":"0 ' 00","games":"2","goals":"2","passes":"0","players":"BRUNO DARE","points":"2","rank":"46","teams":"Valenciennes"},{"box":"0 ' 00","games":"8","goals":"2","passes":"0","players":"LAURENT BLOIS","points":"2","rank":"","teams":"Bethune"},{"box":"0 ' 00","games":"2","goals":"1","passes":"1","players":"MICHAEL THERY","points":"2","rank":"47","teams":"Bethune"},{"box":"0 ' 00","games":"6","goals":"1","passes":"1","players":"VALENTIN LANOY","points":"2","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"6","goals":"1","passes":"1","players":"BENJAMIN FORTINI","points":"2","rank":"","teams":"Moreuil"},{"box":"2 ' 00","games":"2","goals":"1","passes":"1","players":"MAXENCE GILLION","points":"2","rank":"","teams":"Dunkerque"},{"box":"0 ' 00","games":"4","goals":"1","passes":"1","players":"THOMAS JORON","points":"2","rank":"","teams":"Pont de Metz"},{"box":"2 ' 00","games":"4","goals":"1","passes":"1","players":"STEPHANE DUPRE","points":"2","rank":"","teams":"Moreuil"},{"box":"2 ' 00","games":"4","goals":"1","passes":"1","players":"PASCAL MINY","points":"2","rank":"","teams":"Boulogne sur Mer"},{"box":"6 ' 00","games":"9","goals":"1","passes":"1","players":"PHILIPPE DUPONT","points":"2","rank":"","teams":"Pont de Metz"},{"box":"2 ' 00","games":"9","goals":"0","passes":"2","players":"JEREMY LLOBERES","points":"2","rank":"48","teams":"Bethune"},{"box":"0 ' 00","games":"2","goals":"0","passes":"2","players":"LORINE MUCKE","points":"2","rank":"","teams":"Moreuil"},{"box":"2 ' 00","games":"2","goals":"0","passes":"2","players":"ETIENNE CHASSIN","points":"2","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"7","goals":"0","passes":"2","players":"DAVID CLEMENT","points":"2","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"5","goals":"1","passes":"0","players":"STEVE MICHAUX","points":"1","rank":"49","teams":"Moreuil"},{"box":"0 ' 00","games":"6","goals":"1","passes":"0","players":"BENOIT KAMINSKI","points":"1","rank":"","teams":"Valenciennes"},{"box":"4 ' 00","games":"9","goals":"1","passes":"0","players":"NICOLAS COUSIN","points":"1","rank":"","teams":"Valenciennes"},{"box":"0 ' 00","games":"2","goals":"1","passes":"0","players":"JéRéMY SPITZ","points":"1","rank":"","teams":"Bethune"},{"box":"2 ' 00","games":"6","goals":"1","passes":"0","players":"PIERRE CHALOPIN","points":"1","rank":"","teams":"Amiens"},{"box":"12 ' 00","games":"3","goals":"0","passes":"1","players":"GREGORY GAJEWSKI","points":"1","rank":"50","teams":"Bethune"},{"box":"4 ' 00","games":"6","goals":"0","passes":"1","players":"GREGOIRE COLBERT","points":"1","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"4","goals":"0","passes":"1","players":"DAMIEN ALCUTA","points":"1","rank":"","teams":"Valenciennes"},{"box":"2 ' 00","games":"3","goals":"0","passes":"1","players":"LAURENT BLONDE","points":"1","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"REMY FOURNIER","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"MATHIEU MINY","points":"0","rank":"","teams":"Boulogne sur Mer"},{"box":"2 ' 00","games":"6","goals":"0","passes":"0","players":"JORDAN LANDO","points":"0","rank":"","teams":"Moreuil"},{"box":"10 ' 00","games":"8","goals":"0","passes":"0","players":"MICKAEL FACHE","points":"0","rank":"","teams":"Moreuil"},{"box":"2 ' 00","games":"1","goals":"0","passes":"0","players":"CLEMENT LAIGNIER","points":"0","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"4","goals":"0","passes":"0","players":"JEAN-EUDES ANDRIEU","points":"0","rank":"","teams":"Dunkerque"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"PHILIPPE POUSSART","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"6","goals":"0","passes":"0","players":"BENOIT FACOMPREZ","points":"0","rank":"","teams":"Boulogne sur Mer"},{"box":"6 ' 00","games":"8","goals":"0","passes":"0","players":"SEBASTIEN BROYARD","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"8","goals":"0","passes":"0","players":"MAXIME DUPONT","points":"0","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"5","goals":"0","passes":"0","players":"CYRIL CARDON","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"9","goals":"0","passes":"0","players":"ANTHONY BUTIN","points":"0","rank":"","teams":"Pont de Metz"},{"box":"2 ' 00","games":"2","goals":"0","passes":"0","players":"HANSI LANG","points":"0","rank":"","teams":"Amiens"},{"box":"2 ' 00","games":"2","goals":"0","passes":"0","players":"JULIEN SICOT","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"5","goals":"0","passes":"0","players":"ALEXIS PRANGERE","points":"0","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"8","goals":"0","passes":"0","players":"GUILLAUME COPIN","points":"0","rank":"","teams":"Valenciennes"},{"box":"0 ' 00","games":"7","goals":"0","passes":"0","players":"ANTOINE SUQUET","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"4","goals":"0","passes":"0","players":"FLORIAN JABELIN","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"JULIEN DUPUIS","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"6","goals":"0","passes":"0","players":"CYRIL LOUCHET","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"3","goals":"0","passes":"0","players":"DIEGO CREPIN","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"PIERRE MARTEL","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"8","goals":"0","passes":"0","players":"FRANCOIS CHOMEZ","points":"0","rank":"","teams":"Bethune"},{"box":"0 ' 00","games":"10","goals":"0","passes":"0","players":"CHRISTOPHE BOUILLEZ","points":"0","rank":"","teams":"Bethune"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"VALENTIN DEMARET","points":"0","rank":"","teams":"Pont de Metz"},{"box":"2 ' 00","games":"4","goals":"0","passes":"0","players":"SOPHIE MINY","points":"0","rank":"","teams":"Boulogne sur Mer"}],
-	      results: [{"ascore":"4","ateam":"BOULOGNE SUR MER","bscore":"7","bteam":"AMIENS","date":"21-10-2018","day":"1","place":"Boulogne","schedule":"10h00"},{"ascore":"22","ateam":"DUNKERQUE","bscore":"2","bteam":"MOREUIL","date":"21-10-2018","day":"1","place":"Boulogne","schedule":"12h00"},{"ascore":"2","ateam":"PONT DE METZ","bscore":"5","bteam":"AMIENS","date":"11-11-2018","day":"2","place":"Pont de Metz","schedule":"10h00"},{"ascore":"1","ateam":"BETHUNE","bscore":"7","bteam":"DUNKERQUE","date":"11-11-2018","day":"2","place":"Pont de Metz","schedule":"12h00"},{"ascore":"12","ateam":"BOULOGNE SUR MER","bscore":"3","bteam":"MOREUIL","date":"11-11-2018","day":"2","place":"Pont de Metz","schedule":"14h00"},{"ascore":"4","ateam":"MOREUIL","bscore":"15","bteam":"PONT DE METZ","date":"18-11-2018","day":"3","place":"Moreuil","schedule":"10h00"},{"ascore":"16","ateam":"BETHUNE","bscore":"3","bteam":"VALENCIENNES","date":"18-11-2018","day":"3","place":"Moreuil","schedule":"12h00"},{"ascore":"0","ateam":"DUNKERQUE","bscore":"5","bteam":"AMIENS","date":"18-11-2018","day":"3","place":"Moreuil","schedule":"14h00"},{"ascore":"9","ateam":"AMIENS","bscore":"5","bteam":"BETHUNE","date":"02-12-2018","day":"4","place":"Amiens","schedule":"10h00"},{"ascore":"7","ateam":"PONT DE METZ","bscore":"5","bteam":"BOULOGNE SUR MER","date":"02-12-2018","day":"4","place":"Amiens","schedule":"12h00"},{"ascore":"11","ateam":"DUNKERQUE","bscore":"11","bteam":"VALENCIENNES","date":"02-12-2018","day":"4","place":"Amiens","schedule":"14h00"},{"ascore":"15","ateam":"BETHUNE","bscore":"2","bteam":"MOREUIL","date":"09-12-2018","day":"5","place":"Boulogne","schedule":"10h00"},{"ascore":"15","ateam":"DUNKERQUE","bscore":"6","bteam":"BOULOGNE SUR MER","date":"09-12-2018","day":"5","place":"Boulogne","schedule":"12h00"},{"ascore":"10","ateam":"AMIENS","bscore":"5","bteam":"VALENCIENNES","date":"09-12-2018","day":"5","place":"Boulogne","schedule":"14h00"},{"ascore":"15","ateam":"VALENCIENNES","bscore":"10","bteam":"MOREUIL","date":"16-12-2018","day":"6","place":"Pont de Metz","schedule":"10h00"},{"ascore":"3","ateam":"BOULOGNE SUR MER","bscore":"16","bteam":"BETHUNE","date":"16-12-2018","day":"6","place":"Pont de Metz","schedule":"12h00"},{"ascore":"7","ateam":"PONT DE METZ","bscore":"11","bteam":"DUNKERQUE","date":"16-12-2018","day":"6","place":"Pont de Metz","schedule":"14h00"},{"ascore":"1","ateam":"MOREUIL","bscore":"8","bteam":"AMIENS","date":"13-01-2019","day":"7","place":"Moreuil","schedule":"10h00"},{"ascore":"9","ateam":"VALENCIENNES","bscore":"4","bteam":"BOULOGNE SUR MER","date":"13-01-2019","day":"7","place":"Moreuil","schedule":"12h00"},{"ascore":"4","ateam":"BETHUNE","bscore":"8","bteam":"PONT DE METZ","date":"13-01-2019","day":"7","place":"Moreuil","schedule":"14h05"},{"ascore":"7","ateam":"AMIENS","bscore":"3","bteam":"BOULOGNE SUR MER","date":"20-01-2019","day":"8","place":"Boulogne","schedule":"10h00"},{"ascore":"2","ateam":"VALENCIENNES","bscore":"6","bteam":"PONT DE METZ","date":"20-01-2019","day":"8","place":"Boulogne","schedule":"12h00"},{"ascore":"0","ateam":"MOREUIL","bscore":"5","bteam":"DUNKERQUE","date":"20-01-2019","day":"8","place":"Boulogne","schedule":"12h00"},{"ascore":"3","ateam":"BETHUNE","bscore":"1","bteam":"AMIENS","date":"27-01-2019","day":"9","place":"Boulogne","schedule":"10h00"},{"ascore":"2","ateam":"BOULOGNE SUR MER","bscore":"6","bteam":"PONT DE METZ","date":"27-01-2019","day":"9","place":"Boulogne","schedule":"12h35"},{"ascore":"2","ateam":"VALENCIENNES","bscore":"11","bteam":"DUNKERQUE","date":"27-01-2019","day":"9","place":"Boulogne","schedule":"14h00"},{"ascore":"10","ateam":"AMIENS","bscore":"1","bteam":"PONT DE METZ","date":"03-02-2019","day":"10","place":"PONT DE METZ","schedule":"10h00"},{"ascore":"5","ateam":"DUNKERQUE","bscore":"8","bteam":"BETHUNE","date":"03-02-2019","day":"10","place":"Pont de Metz","schedule":"12h00"},{"ascore":"11","ateam":"MOREUIL","bscore":"15","bteam":"BOULOGNE SUR MER","date":"03-02-2019","day":"10","place":"Moreuil","schedule":"14h00"},{"ascore":"6","ateam":"MOREUIL","bscore":"12","bteam":"BETHUNE","date":"10-02-2019","day":"11","place":"Moreuil","schedule":"10h00"},{"ascore":"5","ateam":"BOULOGNE SUR MER","bscore":"6","bteam":"DUNKERQUE","date":"10-02-2019","day":"11","place":"boulogne sur mer","schedule":"10h00"},{"ascore":"2","ateam":"VALENCIENNES","bscore":"10","bteam":"AMIENS","date":"10-02-2019","day":"11","place":"Moreuil","schedule":"12h00"},{"ascore":"5","ateam":"BOULOGNE SUR MER","bscore":"9","bteam":"VALENCIENNES","date":"10-03-2019","day":"12","place":"Boulogne","schedule":"10h00"},{"ascore":"5","ateam":"PONT DE METZ","bscore":"9","bteam":"BETHUNE","date":"10-03-2019","day":"12","place":"Boulogne","schedule":"12h00"}]
+	      rankings: [{"draws":"E.","forfaited":"F.","goals":"buts","goalsAllowed":"BE.","goalsDiff":"diff.","loses":"P.","played":"J.","points":"Pts","rank":"Pl","teams":"Equipe","wins":"V."},{"draws":"0","forfaited":"0","goals":"87","goalsAllowed":"32","goalsDiff":"55","loses":"1","played":"12","points":"33","rank":"1","teams":"Amiens","wins":"11"},{"draws":"0","forfaited":"0","goals":"98","goalsAllowed":"53","goalsDiff":"45","loses":"3","played":"11","points":"24","rank":"2","teams":"Bethune","wins":"8"},{"draws":"1","forfaited":"2","goals":"93","goalsAllowed":"52","goalsDiff":"41","loses":"1","played":"11","points":"18","rank":"3","teams":"Dunkerque","wins":"7"},{"draws":"0","forfaited":"0","goals":"66","goalsAllowed":"60","goalsDiff":"6","loses":"4","played":"10","points":"18","rank":"4","teams":"Pont de Metz","wins":"6"},{"draws":"1","forfaited":"0","goals":"62","goalsAllowed":"92","goalsDiff":"-30","loses":"6","played":"10","points":"10","rank":"5","teams":"Valenciennes","wins":"3"},{"draws":"0","forfaited":"0","goals":"64","goalsAllowed":"96","goalsDiff":"-32","loses":"9","played":"11","points":"6","rank":"6","teams":"Boulogne sur Mer","wins":"2"},{"draws":"0","forfaited":"1","goals":"53","goalsAllowed":"138","goalsDiff":"-85","loses":"10","played":"11","points":"-2","rank":"7","teams":"Moreuil","wins":"0"}],
+	      players: [{"box":"Pénalités","games":"Matchs","goals":"Buts","passes":"Passes","player":"Joueur","points":"Points","rank":"Pl","team":"Equipe"},{"box":"6 ' 00","games":"9","goals":"38","passes":"5","players":"REMY BOYTARD","points":"43","rank":"1","teams":"Moreuil"},{"box":"4 ' 00","games":"9","goals":"22","passes":"12","players":"ANTOINE JANOT","points":"34","rank":"2","teams":"Valenciennes"},{"box":"4 ' 00","games":"6","goals":"24","passes":"8","players":"LUCAS DUMERLIE","points":"32","rank":"3","teams":"Dunkerque"},{"box":"12 ' 00","games":"10","goals":"20","passes":"10","players":"CHRISTOPHE DEVAUCHELLE","points":"30","rank":"4","teams":"Bethune"},{"box":"10 ' 00","games":"10","goals":"10","passes":"15","players":"ARNAUD PEZE","points":"25","rank":"5","teams":"Amiens"},{"box":"8 ' 00","games":"11","goals":"17","passes":"7","players":"GABRIEL SPITZ","points":"24","rank":"6","teams":"Bethune"},{"box":"6 ' 00","games":"10","goals":"16","passes":"8","players":"BENOIT ANDRE","points":"24","rank":"7","teams":"Amiens"},{"box":"2 ' 00","games":"8","goals":"15","passes":"5","players":"JULIEN CLIPET","points":"20","rank":"8","teams":"Boulogne sur Mer"},{"box":"32 ' 00","games":"10","goals":"14","passes":"6","players":"JONATHAN TEMBUYSER","points":"20","rank":"9","teams":"Bethune"},{"box":"2 ' 00","games":"9","goals":"10","passes":"10","players":"SEBASTIEN LUGAN JAMES","points":"20","rank":"10","teams":"Pont de Metz"},{"box":"2 ' 00","games":"8","goals":"9","passes":"10","players":"NICOLAS EYROLLES","points":"19","rank":"11","teams":"Dunkerque"},{"box":"12 ' 00","games":"10","goals":"12","passes":"6","players":"GREGOIRE KUBICKI","points":"18","rank":"12","teams":"Bethune"},{"box":"16 ' 00","games":"10","goals":"14","passes":"3","players":"ANTHONY WALLET","points":"17","rank":"13","teams":"Amiens"},{"box":"4 ' 00","games":"8","goals":"11","passes":"6","players":"PHILIPPE TANGHE","points":"17","rank":"14","teams":"Dunkerque"},{"box":"10 ' 00","games":"9","goals":"8","passes":"9","players":"GREGOIRE GIGUERE","points":"17","rank":"15","teams":"Bethune"},{"box":"0 ' 00","games":"4","goals":"13","passes":"3","players":"GAUTHIER CHEVALIER","points":"16","rank":"16","teams":"Valenciennes"},{"box":"0 ' 00","games":"7","goals":"9","passes":"7","players":"JOHAN BIAUSQUE","points":"16","rank":"17","teams":"Boulogne sur Mer"},{"box":"16 ' 00","games":"9","goals":"7","passes":"9","players":"CYRIL LUGUET","points":"16","rank":"18","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"7","goals":"12","passes":"3","players":"ANTOINE DEMARET","points":"15","rank":"19","teams":"Pont de Metz"},{"box":"4 ' 00","games":"9","goals":"10","passes":"4","players":"NICOLAS BRUXELLE","points":"14","rank":"20","teams":"Pont de Metz"},{"box":"4 ' 00","games":"11","goals":"9","passes":"4","players":"LUC FOULARD","points":"13","rank":"21","teams":"Bethune"},{"box":"2 ' 00","games":"8","goals":"7","passes":"6","players":"MAXIME BROUCKE","points":"13","rank":"22","teams":"Dunkerque"},{"box":"6 ' 00","games":"4","goals":"9","passes":"3","players":"JONATHAN BODEL","points":"12","rank":"23","teams":"Dunkerque"},{"box":"12 ' 00","games":"9","goals":"8","passes":"4","players":"KENNY GERVOIS","points":"12","rank":"24","teams":"Amiens"},{"box":"10 ' 00","games":"9","goals":"6","passes":"6","players":"NICOLAS PRAGNIACY","points":"12","rank":"25","teams":"Valenciennes"},{"box":"12 ' 00","games":"10","goals":"5","passes":"7","players":"GAEL DAMELINCOURT","points":"12","rank":"26","teams":"Moreuil"},{"box":"0 ' 00","games":"3","goals":"8","passes":"3","players":"VINCENT NAELS","points":"11","rank":"27","teams":"Dunkerque"},{"box":"6 ' 00","games":"8","goals":"7","passes":"3","players":"LAURENT BIENKOWSKI","points":"10","rank":"28","teams":"Valenciennes"},{"box":"2 ' 00","games":"5","goals":"7","passes":"3","players":"FRANCOIS MARTEEL","points":"10","rank":"","teams":"Dunkerque"},{"box":"8 ' 00","games":"8","goals":"7","passes":"3","players":"TONY LAGACHE","points":"10","rank":"","teams":"Boulogne sur Mer"},{"box":"4 ' 00","games":"6","goals":"5","passes":"5","players":"YAEL AYIKA","points":"10","rank":"29","teams":"Dunkerque"},{"box":"8 ' 00","games":"9","goals":"3","passes":"7","players":"MAXIME STEENKISTE","points":"10","rank":"30","teams":"Valenciennes"},{"box":"8 ' 00","games":"11","goals":"7","passes":"2","players":"DAVID BILLET","points":"9","rank":"31","teams":"Boulogne sur Mer"},{"box":"2 ' 00","games":"10","goals":"5","passes":"4","players":"SULLIVAN DANTEN","points":"9","rank":"32","teams":"Pont de Metz"},{"box":"4 ' 00","games":"5","goals":"7","passes":"1","players":"FLORENT DELAPLACE","points":"8","rank":"33","teams":"Pont de Metz"},{"box":"6 ' 00","games":"7","goals":"5","passes":"3","players":"ANTHONY VINCENT","points":"8","rank":"34","teams":"Bethune"},{"box":"4 ' 00","games":"7","goals":"5","passes":"3","players":"ALLAN CAMBERLEIN","points":"8","rank":"","teams":"Dunkerque"},{"box":"4 ' 00","games":"6","goals":"4","passes":"4","players":"FLORIAN NOEL","points":"8","rank":"35","teams":"Moreuil"},{"box":"10 ' 00","games":"8","goals":"7","passes":"0","players":"MICKAEL LUGAN JAMES","points":"7","rank":"36","teams":"Pont de Metz"},{"box":"14 ' 00","games":"9","goals":"6","passes":"1","players":"CHRISTOPHER AMIET","points":"7","rank":"37","teams":"Amiens"},{"box":"2 ' 00","games":"9","goals":"6","passes":"1","players":"NICOLAS MERLIN","points":"7","rank":"","teams":"Amiens"},{"box":"14 ' 00","games":"11","goals":"5","passes":"2","players":"FAUSTIN FACOMPREZ","points":"7","rank":"38","teams":"Boulogne sur Mer"},{"box":"18 ' 00","games":"9","goals":"5","passes":"2","players":"FLORIAN CARON","points":"7","rank":"","teams":"Amiens"},{"box":"6 ' 00","games":"8","goals":"4","passes":"3","players":"CEDRIC FOUQUET","points":"7","rank":"39","teams":"Pont de Metz"},{"box":"10 ' 00","games":"9","goals":"3","passes":"4","players":"TANGUY PEPONAS","points":"7","rank":"40","teams":"Amiens"},{"box":"0 ' 00","games":"9","goals":"4","passes":"2","players":"NICOLAS RIDOUX","points":"6","rank":"41","teams":"Bethune"},{"box":"16 ' 00","games":"8","goals":"3","passes":"3","players":"VINCENT LUGAN JAMES","points":"6","rank":"42","teams":"Pont de Metz"},{"box":"0 ' 00","games":"8","goals":"3","passes":"3","players":"ERWAN ROUDOT","points":"6","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"4","goals":"4","passes":"1","players":"GUILLAUME DANTEN","points":"5","rank":"43","teams":"Pont de Metz"},{"box":"0 ' 00","games":"5","goals":"2","passes":"3","players":"GAEL BATARD","points":"5","rank":"44","teams":"Boulogne sur Mer"},{"box":"4 ' 00","games":"9","goals":"2","passes":"3","players":"YANNICK LENGLET","points":"5","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"11","goals":"4","passes":"0","players":"BASTIEN FACOMPREZ","points":"4","rank":"45","teams":"Boulogne sur Mer"},{"box":"4 ' 00","games":"4","goals":"3","passes":"1","players":"BASTIEN POUCET","points":"4","rank":"46","teams":"Amiens"},{"box":"6 ' 00","games":"6","goals":"3","passes":"1","players":"MAXIME HARZIG","points":"4","rank":"","teams":"Boulogne sur Mer"},{"box":"16 ' 00","games":"8","goals":"3","passes":"1","players":"THOMAS EPIFANI","points":"4","rank":"","teams":"Boulogne sur Mer"},{"box":"4 ' 00","games":"8","goals":"2","passes":"2","players":"MATHIEU BOISSENOT","points":"4","rank":"47","teams":"Pont de Metz"},{"box":"4 ' 00","games":"10","goals":"2","passes":"2","players":"SEBASTIEN DELPLACE","points":"4","rank":"","teams":"Bethune"},{"box":"8 ' 00","games":"10","goals":"2","passes":"2","players":"BENOIT FRONTY","points":"4","rank":"","teams":"Valenciennes"},{"box":"2 ' 00","games":"9","goals":"1","passes":"3","players":"FRANCOIS QUEMENER","points":"4","rank":"48","teams":"Valenciennes"},{"box":"18 ' 00","games":"10","goals":"3","passes":"0","players":"FREDERIC TALMANT","points":"3","rank":"49","teams":"Valenciennes"},{"box":"0 ' 00","games":"9","goals":"3","passes":"0","players":"LAURENT BLOIS","points":"3","rank":"","teams":"Bethune"},{"box":"22 ' 00","games":"11","goals":"2","passes":"1","players":"JEREMY BENARD","points":"3","rank":"50","teams":"Bethune"},{"box":"0 ' 00","games":"2","goals":"2","passes":"1","players":"FLORIAN VITTECOQ","points":"3","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"7","goals":"2","passes":"1","players":"DAVID RENAUX","points":"3","rank":"","teams":"Dunkerque"},{"box":"0 ' 00","games":"3","goals":"0","passes":"3","players":"MATTHIEU NISON","points":"3","rank":"51","teams":"Dunkerque"},{"box":"0 ' 00","games":"3","goals":"2","passes":"0","players":"BRUNO DARE","points":"2","rank":"52","teams":"Valenciennes"},{"box":"2 ' 00","games":"2","goals":"1","passes":"1","players":"MAXENCE GILLION","points":"2","rank":"53","teams":"Dunkerque"},{"box":"2 ' 00","games":"4","goals":"1","passes":"1","players":"PASCAL MINY","points":"2","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"3","goals":"1","passes":"1","players":"MICHAEL THERY","points":"2","rank":"","teams":"Bethune"},{"box":"0 ' 00","games":"4","goals":"1","passes":"1","players":"THOMAS JORON","points":"2","rank":"","teams":"Pont de Metz"},{"box":"6 ' 00","games":"10","goals":"1","passes":"1","players":"PHILIPPE DUPONT","points":"2","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"6","goals":"1","passes":"1","players":"BENJAMIN FORTINI","points":"2","rank":"","teams":"Moreuil"},{"box":"2 ' 00","games":"4","goals":"1","passes":"1","players":"STEPHANE DUPRE","points":"2","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"6","goals":"1","passes":"1","players":"VALENTIN LANOY","points":"2","rank":"","teams":"Boulogne sur Mer"},{"box":"2 ' 00","games":"2","goals":"0","passes":"2","players":"ETIENNE CHASSIN","points":"2","rank":"54","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"2","goals":"0","passes":"2","players":"LORINE MUCKE","points":"2","rank":"","teams":"Moreuil"},{"box":"12 ' 00","games":"4","goals":"0","passes":"2","players":"GREGORY GAJEWSKI","points":"2","rank":"","teams":"Bethune"},{"box":"4 ' 00","games":"10","goals":"0","passes":"2","players":"JEREMY LLOBERES","points":"2","rank":"","teams":"Bethune"},{"box":"0 ' 00","games":"9","goals":"0","passes":"2","players":"DAVID CLEMENT","points":"2","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"3","goals":"1","passes":"0","players":"JéRéMY SPITZ","points":"1","rank":"55","teams":"Bethune"},{"box":"2 ' 00","games":"7","goals":"1","passes":"0","players":"PIERRE CHALOPIN","points":"1","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"7","goals":"1","passes":"0","players":"STEVE MICHAUX","points":"1","rank":"","teams":"Moreuil"},{"box":"4 ' 00","games":"1","goals":"1","passes":"0","players":"ARNAUD STEENKISTE","points":"1","rank":"","teams":"Valenciennes"},{"box":"0 ' 00","games":"6","goals":"1","passes":"0","players":"BENOIT KAMINSKI","points":"1","rank":"","teams":"Valenciennes"},{"box":"4 ' 00","games":"10","goals":"1","passes":"0","players":"NICOLAS COUSIN","points":"1","rank":"","teams":"Valenciennes"},{"box":"6 ' 00","games":"10","goals":"1","passes":"0","players":"SEBASTIEN BROYARD","points":"1","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"9","goals":"0","passes":"1","players":"MAXIME DUPONT","points":"1","rank":"56","teams":"Pont de Metz"},{"box":"0 ' 00","games":"4","goals":"0","passes":"1","players":"DAMIEN ALCUTA","points":"1","rank":"","teams":"Valenciennes"},{"box":"2 ' 00","games":"3","goals":"0","passes":"1","players":"LAURENT BLONDE","points":"1","rank":"","teams":"Pont de Metz"},{"box":"6 ' 00","games":"8","goals":"0","passes":"1","players":"GREGOIRE COLBERT","points":"1","rank":"","teams":"Moreuil"},{"box":"10 ' 00","games":"10","goals":"0","passes":"1","players":"MICKAEL FACHE","points":"1","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"9","goals":"0","passes":"0","players":"GUILLAUME COPIN","points":"0","rank":"","teams":"Valenciennes"},{"box":"0 ' 00","games":"11","goals":"0","passes":"0","players":"CHRISTOPHE BOUILLEZ","points":"0","rank":"","teams":"Bethune"},{"box":"2 ' 00","games":"8","goals":"0","passes":"0","players":"JORDAN LANDO","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"PHILIPPE POUSSART","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"MATHIEU MINY","points":"0","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"REMY FOURNIER","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"6","goals":"0","passes":"0","players":"BENOIT FACOMPREZ","points":"0","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"3","goals":"0","passes":"0","players":"DIEGO CREPIN","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"6","goals":"0","passes":"0","players":"CYRIL CARDON","points":"0","rank":"","teams":"Amiens"},{"box":"2 ' 00","games":"1","goals":"0","passes":"0","players":"CLEMENT LAIGNIER","points":"0","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"JULIEN DUPUIS","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"PIERRE MARTEL","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"4","goals":"0","passes":"0","players":"FLORIAN JABELIN","points":"0","rank":"","teams":"Moreuil"},{"box":"0 ' 00","games":"9","goals":"0","passes":"0","players":"FRANCOIS CHOMEZ","points":"0","rank":"","teams":"Bethune"},{"box":"0 ' 00","games":"8","goals":"0","passes":"0","players":"ANTOINE SUQUET","points":"0","rank":"","teams":"Amiens"},{"box":"2 ' 00","games":"4","goals":"0","passes":"0","players":"SOPHIE MINY","points":"0","rank":"","teams":"Boulogne sur Mer"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"VALENTIN DEMARET","points":"0","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"6","goals":"0","passes":"0","players":"CYRIL LOUCHET","points":"0","rank":"","teams":"Amiens"},{"box":"2 ' 00","games":"2","goals":"0","passes":"0","players":"HANSI LANG","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"10","goals":"0","passes":"0","players":"ANTHONY BUTIN","points":"0","rank":"","teams":"Pont de Metz"},{"box":"0 ' 00","games":"1","goals":"0","passes":"0","players":"ARNAUD PARIS","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"4","goals":"0","passes":"0","players":"JEAN-EUDES ANDRIEU","points":"0","rank":"","teams":"Dunkerque"},{"box":"2 ' 00","games":"2","goals":"0","passes":"0","players":"JULIEN SICOT","points":"0","rank":"","teams":"Amiens"},{"box":"0 ' 00","games":"5","goals":"0","passes":"0","players":"ALEXIS PRANGERE","points":"0","rank":"","teams":"Boulogne sur Mer"}],
+	      results: [{"ascore":"4","ateam":"BOULOGNE SUR MER","bscore":"7","bteam":"AMIENS","date":"21-10-2018","day":"1","place":"Boulogne","schedule":"10h00"},{"ascore":"22","ateam":"DUNKERQUE","bscore":"2","bteam":"MOREUIL","date":"21-10-2018","day":"1","place":"Boulogne","schedule":"12h00"},{"ascore":"2","ateam":"PONT DE METZ","bscore":"5","bteam":"AMIENS","date":"11-11-2018","day":"2","place":"Pont de Metz","schedule":"10h00"},{"ascore":"1","ateam":"BETHUNE","bscore":"7","bteam":"DUNKERQUE","date":"11-11-2018","day":"2","place":"Pont de Metz","schedule":"12h00"},{"ascore":"12","ateam":"BOULOGNE SUR MER","bscore":"3","bteam":"MOREUIL","date":"11-11-2018","day":"2","place":"Pont de Metz","schedule":"14h00"},{"ascore":"4","ateam":"MOREUIL","bscore":"15","bteam":"PONT DE METZ","date":"18-11-2018","day":"3","place":"Moreuil","schedule":"10h00"},{"ascore":"16","ateam":"BETHUNE","bscore":"3","bteam":"VALENCIENNES","date":"18-11-2018","day":"3","place":"Moreuil","schedule":"12h00"},{"ascore":"0","ateam":"DUNKERQUE","bscore":"5","bteam":"AMIENS","date":"18-11-2018","day":"3","place":"Moreuil","schedule":"14h00"},{"ascore":"9","ateam":"AMIENS","bscore":"5","bteam":"BETHUNE","date":"02-12-2018","day":"4","place":"Amiens","schedule":"10h00"},{"ascore":"7","ateam":"PONT DE METZ","bscore":"5","bteam":"BOULOGNE SUR MER","date":"02-12-2018","day":"4","place":"Amiens","schedule":"12h00"},{"ascore":"11","ateam":"DUNKERQUE","bscore":"11","bteam":"VALENCIENNES","date":"02-12-2018","day":"4","place":"Amiens","schedule":"14h00"},{"ascore":"15","ateam":"BETHUNE","bscore":"2","bteam":"MOREUIL","date":"09-12-2018","day":"5","place":"Boulogne","schedule":"10h00"},{"ascore":"15","ateam":"DUNKERQUE","bscore":"6","bteam":"BOULOGNE SUR MER","date":"09-12-2018","day":"5","place":"Boulogne","schedule":"12h00"},{"ascore":"10","ateam":"AMIENS","bscore":"5","bteam":"VALENCIENNES","date":"09-12-2018","day":"5","place":"Boulogne","schedule":"14h00"},{"ascore":"15","ateam":"VALENCIENNES","bscore":"10","bteam":"MOREUIL","date":"16-12-2018","day":"6","place":"Pont de Metz","schedule":"10h00"},{"ascore":"3","ateam":"BOULOGNE SUR MER","bscore":"16","bteam":"BETHUNE","date":"16-12-2018","day":"6","place":"Pont de Metz","schedule":"12h00"},{"ascore":"7","ateam":"PONT DE METZ","bscore":"11","bteam":"DUNKERQUE","date":"16-12-2018","day":"6","place":"Pont de Metz","schedule":"14h00"},{"ascore":"1","ateam":"MOREUIL","bscore":"8","bteam":"AMIENS","date":"13-01-2019","day":"7","place":"Moreuil","schedule":"10h00"},{"ascore":"9","ateam":"VALENCIENNES","bscore":"4","bteam":"BOULOGNE SUR MER","date":"13-01-2019","day":"7","place":"Moreuil","schedule":"12h00"},{"ascore":"4","ateam":"BETHUNE","bscore":"8","bteam":"PONT DE METZ","date":"13-01-2019","day":"7","place":"Moreuil","schedule":"14h05"},{"ascore":"7","ateam":"AMIENS","bscore":"3","bteam":"BOULOGNE SUR MER","date":"20-01-2019","day":"8","place":"Boulogne","schedule":"10h00"},{"ascore":"0","ateam":"MOREUIL","bscore":"5","bteam":"DUNKERQUE","date":"20-01-2019","day":"8","place":"Boulogne","schedule":"12h00"},{"ascore":"2","ateam":"VALENCIENNES","bscore":"6","bteam":"PONT DE METZ","date":"20-01-2019","day":"8","place":"Boulogne","schedule":"12h00"},{"ascore":"3","ateam":"BETHUNE","bscore":"1","bteam":"AMIENS","date":"27-01-2019","day":"9","place":"Boulogne","schedule":"10h00"},{"ascore":"2","ateam":"BOULOGNE SUR MER","bscore":"6","bteam":"PONT DE METZ","date":"27-01-2019","day":"9","place":"Boulogne","schedule":"12h35"},{"ascore":"2","ateam":"VALENCIENNES","bscore":"11","bteam":"DUNKERQUE","date":"27-01-2019","day":"9","place":"Boulogne","schedule":"14h00"},{"ascore":"10","ateam":"AMIENS","bscore":"1","bteam":"PONT DE METZ","date":"03-02-2019","day":"10","place":"PONT DE METZ","schedule":"10h00"},{"ascore":"5","ateam":"DUNKERQUE","bscore":"8","bteam":"BETHUNE","date":"03-02-2019","day":"10","place":"Pont de Metz","schedule":"12h00"},{"ascore":"11","ateam":"MOREUIL","bscore":"15","bteam":"BOULOGNE SUR MER","date":"03-02-2019","day":"10","place":"Moreuil","schedule":"14h00"},{"ascore":"6","ateam":"MOREUIL","bscore":"12","bteam":"BETHUNE","date":"10-02-2019","day":"11","place":"Moreuil","schedule":"10h00"},{"ascore":"5","ateam":"BOULOGNE SUR MER","bscore":"6","bteam":"DUNKERQUE","date":"10-02-2019","day":"11","place":"boulogne sur mer","schedule":"10h00"},{"ascore":"2","ateam":"VALENCIENNES","bscore":"10","bteam":"AMIENS","date":"10-02-2019","day":"11","place":"Moreuil","schedule":"12h00"},{"ascore":"10","ateam":"AMIENS","bscore":"6","bteam":"MOREUIL","date":"10-03-2019","day":"12","place":"Moreuil","schedule":"10h00"},{"ascore":"5","ateam":"BOULOGNE SUR MER","bscore":"9","bteam":"VALENCIENNES","date":"10-03-2019","day":"12","place":"Boulogne","schedule":"10h00"},{"ascore":"5","ateam":"PONT DE METZ","bscore":"9","bteam":"BETHUNE","date":"10-03-2019","day":"12","place":"Boulogne","schedule":"12h00"},{"ascore":"9","ateam":"PONT DE METZ","bscore":"8","bteam":"MOREUIL","date":"17-03-2019","day":"13","place":"Amiens","schedule":"10h00"},{"ascore":"4","ateam":"VALENCIENNES","bscore":"9","bteam":"BETHUNE","date":"17-03-2019","day":"13","place":"Amiens","schedule":"12h00"},{"ascore":"5","ateam":"AMIENS","bscore":"0","bteam":"DUNKERQUE","date":"17-03-2019","day":"13","place":"Amiens","schedule":"14h00"}]
 	    },
 	    {
 	      year: "2017-2018",
@@ -489,7 +489,7 @@ var app = (function () {
 	  ]
 	});
 
-	/* src/Menu.html generated by Svelte v2.16.1 */
+	/* src/components/Menu.svelte generated by Svelte v2.16.1 */
 
 	function data() {
 	  return {
@@ -509,7 +509,7 @@ var app = (function () {
 		return store;
 	}
 
-	const file = "src/Menu.html";
+	const file = "src/components/Menu.svelte";
 
 	function click_handler(event) {
 		const { component, ctx } = this._svelte;
@@ -728,11 +728,11 @@ var app = (function () {
 	Menu.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Header.html generated by Svelte v2.16.1 */
+	/* src/components/Header.svelte generated by Svelte v2.16.1 */
 
 
 
-	const file$1 = "src/Header.html";
+	const file$1 = "src/components/Header.svelte";
 
 	function create_main_fragment$1(component, ctx) {
 		var div0, text0, div3, div1, text1, div2, text2, img, current;
@@ -835,7 +835,7 @@ var app = (function () {
 	Header.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Result.html generated by Svelte v2.16.1 */
+	/* src/components/Result.svelte generated by Svelte v2.16.1 */
 
 	function MakeInfo(x) {
 	  return (
@@ -845,7 +845,7 @@ var app = (function () {
 	    (x.place ? ", à " + x.place.toLowerCase() : "")
 	  );
 	}
-	const file$2 = "src/Result.html";
+	const file$2 = "src/components/Result.svelte";
 
 	function create_main_fragment$2(component, ctx) {
 		var p0, text0_value = MakeInfo(ctx.result), text0, text1, div, p1, text2_value = ctx.result.ateam, text2, p1_class_value, text3, p2, text4_value = ctx.result.ascore, text4, p2_class_value, text5, p3, text7, p4, text8_value = ctx.result.bscore, text8, p4_class_value, text9, p5, text10_value = ctx.result.bteam, text10, p5_class_value, current;
@@ -990,11 +990,11 @@ var app = (function () {
 	Result.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Results.html generated by Svelte v2.16.1 */
+	/* src/components/Results.svelte generated by Svelte v2.16.1 */
 
 
 
-	const file$3 = "src/Results.html";
+	const file$3 = "src/components/Results.svelte";
 
 	function get_each_context$1(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -1176,9 +1176,9 @@ var app = (function () {
 	Results.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Schedule.html generated by Svelte v2.16.1 */
+	/* src/components/Schedule.svelte generated by Svelte v2.16.1 */
 
-	const file$4 = "src/Schedule.html";
+	const file$4 = "src/components/Schedule.svelte";
 
 	function create_main_fragment$4(component, ctx) {
 		var p, text, current;
@@ -1246,11 +1246,11 @@ var app = (function () {
 	Schedule.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Schedules.html generated by Svelte v2.16.1 */
+	/* src/components/Schedules.svelte generated by Svelte v2.16.1 */
 
 
 
-	const file$5 = "src/Schedules.html";
+	const file$5 = "src/components/Schedules.svelte";
 
 	function get_each_context$2(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -1431,7 +1431,7 @@ var app = (function () {
 	Schedules.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Home.html generated by Svelte v2.16.1 */
+	/* src/components/Home.svelte generated by Svelte v2.16.1 */
 
 
 
@@ -1456,7 +1456,7 @@ var app = (function () {
 		return store;
 	}
 
-	const file$6 = "src/Home.html";
+	const file$6 = "src/components/Home.svelte";
 
 	function get_each_context$3(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -1765,9 +1765,9 @@ var app = (function () {
 	Home.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Gear.html generated by Svelte v2.16.1 */
+	/* src/components/Gear.svelte generated by Svelte v2.16.1 */
 
-	const file$7 = "src/Gear.html";
+	const file$7 = "src/components/Gear.svelte";
 
 	function create_main_fragment$7(component, ctx) {
 		var p0, text0_value = ctx.gear.name, text0, text1, p1, text2_value = ctx.gear.description, text2, current;
@@ -1849,11 +1849,11 @@ var app = (function () {
 	Gear.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Gears.html generated by Svelte v2.16.1 */
+	/* src/components/Gears.svelte generated by Svelte v2.16.1 */
 
 
 
-	const file$8 = "src/Gears.html";
+	const file$8 = "src/components/Gears.svelte";
 
 	function get_each_context$4(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -2035,12 +2035,12 @@ var app = (function () {
 	Gears.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Team.html generated by Svelte v2.16.1 */
+	/* src/components/Team.svelte generated by Svelte v2.16.1 */
 
 
 
 
-	const file$9 = "src/Team.html";
+	const file$9 = "src/components/Team.svelte";
 
 	function create_main_fragment$9(component, ctx) {
 		var div2, p0, text0_value = ctx.team.name, text0, text1, div0, p1, text2_value = ctx.team.description, text2, text3, text4, div1, p2, text6, text7, p3, text9, current;
@@ -2231,7 +2231,7 @@ var app = (function () {
 	Team.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Teams.html generated by Svelte v2.16.1 */
+	/* src/components/Teams.svelte generated by Svelte v2.16.1 */
 
 
 
@@ -2239,7 +2239,7 @@ var app = (function () {
 		return store;
 	}
 
-	const file$a = "src/Teams.html";
+	const file$a = "src/components/Teams.svelte";
 
 	function get_each_context$5(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -2425,9 +2425,9 @@ var app = (function () {
 	Teams.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Rankings.html generated by Svelte v2.16.1 */
+	/* src/components/Rankings.svelte generated by Svelte v2.16.1 */
 
-	const file$b = "src/Rankings.html";
+	const file$b = "src/components/Rankings.svelte";
 
 	function get_each_context$6(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -2699,7 +2699,7 @@ var app = (function () {
 	Rankings.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Competition.html generated by Svelte v2.16.1 */
+	/* src/components/Competition.svelte generated by Svelte v2.16.1 */
 
 
 
@@ -2713,7 +2713,7 @@ var app = (function () {
 		return store;
 	}
 
-	const file$c = "src/Competition.html";
+	const file$c = "src/components/Competition.svelte";
 
 	function get_each1_context(ctx, list, i) {
 		const child_ctx = Object.create(ctx);
@@ -3114,9 +3114,9 @@ var app = (function () {
 	Competition.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/Contact.html generated by Svelte v2.16.1 */
+	/* src/components/Contact.svelte generated by Svelte v2.16.1 */
 
-	const file$d = "src/Contact.html";
+	const file$d = "src/components/Contact.svelte";
 
 	function create_main_fragment$d(component, ctx) {
 		var form, p0, text1, input0, text2, p1, text4, textarea, text5, div, input1, current;
@@ -3218,7 +3218,7 @@ var app = (function () {
 	Contact.prototype._checkReadOnly = function _checkReadOnly(newState) {
 	};
 
-	/* src/App.html generated by Svelte v2.16.1 */
+	/* src/App.svelte generated by Svelte v2.16.1 */
 
 
 
@@ -3226,7 +3226,7 @@ var app = (function () {
 		return store;
 	}
 
-	const file$e = "src/App.html";
+	const file$e = "src/App.svelte";
 
 	function create_main_fragment$e(component, ctx) {
 		var div2, div0, text0, div1, text1, text2, text3, current;
@@ -3564,16 +3564,16 @@ var app = (function () {
 	};
 
 	const app = new App({
-		target: document.body,
-		data: {
-			pages: [
-				'home',
-				'gears',
-				'results',
-				'teams',
-			],
-			page: 'home'
-		}
+	  target: document.body,
+	  data: {
+	    pages: [
+	      'home',
+	      'gears',
+	      'results',
+	      'teams',
+	    ],
+	    page: 'home'
+	  }
 	});
 
 	return app;

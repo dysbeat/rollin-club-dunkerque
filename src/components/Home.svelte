@@ -76,8 +76,8 @@
 </style>
 
 <script>
-  import Results from "./Results.html";
-  import Schedules from "./Schedules.html";
+  import Results from "./Results.svelte";
+  import Schedules from "./Schedules.svelte";
   import store from "../store.js";
 
   export default {

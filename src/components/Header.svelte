@@ -8,7 +8,7 @@
 </div>
 
 <script>
-  import Menu from "./Menu.html";
+  import Menu from "./Menu.svelte";
 
   export default {
     components: {

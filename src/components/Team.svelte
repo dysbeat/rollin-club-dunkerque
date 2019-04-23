@@ -15,8 +15,8 @@
 </div>
 
 <script>
-	import Gears from "./Gears.html";
-	import Schedules from "./Schedules.html";
+	import Gears from "./Gears.svelte";
+	import Schedules from "./Schedules.svelte";
 	export default {
 	  components: {
 	    Gears,

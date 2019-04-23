@@ -1,25 +1,22 @@
 <ul class="columns">
-	{#each results as result}
+	{#each gears as gear}
 	<li>
-		<Result result={result} />
+		<Gear gear={gear} />
 	</li>
 	{/each}
 </ul>
-
-
 <style>
   li {
-    width: 100%;
     padding-bottom: 20px;
   }
 </style>
 
 <script>
-  import Result from "./Result.html";
+  import Gear from "./Gear.svelte";
 
   export default {
     components: {
-      Result
+      Gear
     }
   };
 </script>
