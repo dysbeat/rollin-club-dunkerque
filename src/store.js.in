@@ -1,13 +1,6 @@
 import {writable} from 'svelte/store';
 
 export const data = writable({
-  pages: [
-    { name: "Accueil", link: "home" },
-    { name: "Equipes", link: "teams" },
-    { name: "Competition", link: "competition" },
-    { name: "Contact", link: "contact" }
-  ],
-  selectedPage: 'home',
   teams: [
     {
       name: "Enfants loisir",

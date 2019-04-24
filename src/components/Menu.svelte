@@ -5,9 +5,9 @@
 		<div class='bar third {visible ? "change" : ""}'></div>
 
 		<ul class='rows menu {visible  ? "change" : ""}'>
-			{#each pages as page}
-			<li on:click={()=> $data.selectedPage = page.link}>
-				<p class='choice {$data.selectedPage == page.link ? "selected" : ""}'>{page.name}</p>
+			{#each $pages as page}
+			<li on:click={()=> $selectedPage = page.link}>
+				<p class='choice {$selectedPage == page.link ? "selected" : ""}'>{page.name}</p>
 			</li>
 			{/each}
 		</ul>
@@ -71,8 +71,7 @@
 </style>
 
 <script>
-  import { data } from "../store.js";
+  import { selectedPage, pages } from "../stores/pages.js";
 
   let visible = false;
-  const pages = $data.pages;
 </script>

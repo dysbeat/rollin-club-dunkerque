@@ -3,31 +3,21 @@
 		<Header />
 	</div>
 	<div class="content-placement">
-		{#if $data.selectedPage == 'teams'}
+		{#if $selectedPage == 'teams'}
 		<Teams />
 		{/if}
-		{#if $data.selectedPage == 'competition'}
+		{#if $selectedPage == 'competition'}
 		<Competition />
 		{/if}
-		{#if $data.selectedPage == 'home'}
+		{#if $selectedPage == 'home'}
 		<Home />
 		{/if}
-		{#if $data.selectedPage == 'contact'}
+		{#if $selectedPage == 'contact'}
 		<Contact />
 		{/if}
 	</div>
 </div>
 
-<script>
-		import Header from "./components/Header.svelte";
-		import Home from "./components/Home.svelte";
-		import Teams from "./components/Teams.svelte";
-		import Competition from "./components/Competition.svelte";
-		import Contact from "./components/Contact.svelte";
-		import { data } from "./store.js";
-
-		let selectedPage = $data.selectedPage;
-</script>
 <style>
 	* {
 	  all: initial;
@@ -72,3 +62,12 @@
 	  grid-area: content;
 	}
 </style>
+
+<script>
+		import Header from "./components/Header.svelte";
+		import Home from "./components/Home.svelte";
+		import Teams from "./components/Teams.svelte";
+		import Competition from "./components/Competition.svelte";
+		import Contact from "./components/Contact.svelte";
+		import { selectedPage } from "./stores/pages.js";
+</script>
