@@ -1,38 +1,18 @@
 <nav role="navigation">
-	<div class="container" on:click='OpenMenu(this)'>
-		<div class='bar first {visible  ? "change" : ""}'></div>
+	<div class="container" on:click={()=> visible = !visible}>
+		<div class=' bar first {visible ? "change" : "" }'></div>
 		<div class='bar second {visible ? "change" : ""}'></div>
 		<div class='bar third {visible ? "change" : ""}'></div>
 
 		<ul class='rows menu {visible  ? "change" : ""}'>
-			{#each $pages as page}
-			<li on:click='ChangePage(page.link)'>
-				<p class='choice {$selectedPage == page.link ? "selected" : ""}'>{page.name}</p>
+			{#each pages as page}
+			<li on:click={()=> $data.selectedPage = page.link}>
+				<p class='choice {$data.selectedPage == page.link ? "selected" : ""}'>{page.name}</p>
 			</li>
 			{/each}
 		</ul>
 	</div>
 </nav>
-
-<script>
-  import store from "../store.js";
-  export default {
-    store: () => store,
-    data() {
-      return {
-        visible: false
-      };
-    },
-    methods: {
-      OpenMenu(x) {
-        this.set({ visible: !this.get().visible });
-      },
-      ChangePage(x) {
-        store.set({ selectedPage: x });
-      }
-    }
-  };
-</script>
 
 <style>
   .container {
@@ -89,3 +69,10 @@
     }
   }
 </style>
+
+<script>
+  import { data } from "../store.js";
+
+  let visible = false;
+  const pages = $data.pages;
+</script>

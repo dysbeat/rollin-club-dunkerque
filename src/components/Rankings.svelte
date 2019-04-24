@@ -52,5 +52,5 @@
 </style>
 
 <script>
-  export default {};
+  export let rankings;
 </script>

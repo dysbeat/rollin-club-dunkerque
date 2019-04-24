@@ -9,12 +9,6 @@
 
 <script>
   import Menu from "./Menu.svelte";
-
-  export default {
-    components: {
-      Menu
-    }
-  };
 </script>
 
 <style>

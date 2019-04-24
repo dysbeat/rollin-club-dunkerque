@@ -13,5 +13,5 @@
 </style>
 
 <script>
-  export default {};
+  export let gear;
 </script>

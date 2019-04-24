@@ -13,10 +13,5 @@
 
 <script>
   import Gear from "./Gear.svelte";
-
-  export default {
-    components: {
-      Gear
-    }
-  };
+  export let gears;
 </script>

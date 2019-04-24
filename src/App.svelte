@@ -3,16 +3,16 @@
 		<Header />
 	</div>
 	<div class="content-placement">
-		{#if $selectedPage == 'teams'}
+		{#if $data.selectedPage == 'teams'}
 		<Teams />
 		{/if}
-		{#if $selectedPage == 'competition'}
+		{#if $data.selectedPage == 'competition'}
 		<Competition />
 		{/if}
-		{#if $selectedPage == 'home'}
+		{#if $data.selectedPage == 'home'}
 		<Home />
 		{/if}
-		{#if $selectedPage == 'contact'}
+		{#if $data.selectedPage == 'contact'}
 		<Contact />
 		{/if}
 	</div>
@@ -24,18 +24,9 @@
 		import Teams from "./components/Teams.svelte";
 		import Competition from "./components/Competition.svelte";
 		import Contact from "./components/Contact.svelte";
-		import store from "./store.js";
+		import { data } from "./store.js";
 
-		export default {
-		  store: () => store,
-		  components: {
-		    Header,
-		    Home,
-		    Teams,
-		    Competition,
-		    Contact
-		  }
-		};
+		let selectedPage = $data.selectedPage;
 </script>
 <style>
 	* {

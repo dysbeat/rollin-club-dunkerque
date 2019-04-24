@@ -14,17 +14,6 @@
 	<Gears gears={team.gears} />
 </div>
 
-<script>
-	import Gears from "./Gears.svelte";
-	import Schedules from "./Schedules.svelte";
-	export default {
-	  components: {
-	    Gears,
-	    Schedules
-	  }
-	};
-</script>
-
 <style>
   * {
     text-align: center;
@@ -47,3 +36,9 @@
     height: 72px;
   }
 </style>
+
+<script>
+	import Gears from "./Gears.svelte";
+	import Schedules from "./Schedules.svelte";
+	export let team;
+</script>

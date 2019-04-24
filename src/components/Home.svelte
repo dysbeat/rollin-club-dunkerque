@@ -16,7 +16,7 @@
 <div class="rows wrap info">
 
 	<div class="columns teams">
-		{#each $teams as team}
+		{#each teams as team}
 		<section>
 			<p class="light-blue title">{team.name}</p>
 			<p class="dark-gray">{team.description}</p>
@@ -27,7 +27,7 @@
 
 	<section class="results">
 		<p class="light-blue title">Derniers résultats</p>
-		<Results results={GetLastResults($seasons)} />
+		<Results results={results} />
 	</section>
 </div>
 
@@ -78,32 +78,11 @@
 <script>
   import Results from "./Results.svelte";
   import Schedules from "./Schedules.svelte";
-  import store from "../store.js";
+  import { data } from "../store.js";
 
-  export default {
-    store: () => store,
-    helpers: {
-      GetLastResults(seasons) {
-        var season = seasons[0];
-        var results = season.results;
-        var selectedResults = [];
-        var count = 0;
-        for (var i = results.length; i-- > 0; ) {
-          if (
-            results[i].ateam == "DUNKERQUE" ||
-            results[i].bteam == "DUNKERQUE"
-          ) {
-            selectedResults.push(results[i]);
-            count++;
-          }
-          if (count == 5) break;
-        }
-        return selectedResults;
-      }
-    },
-    components: {
-      Results,
-      Schedules
-    }
-  };
+  const teams = $data.teams;
+  const results = $data.seasons[0].results
+    .reverse()
+    .filter(result => result.ateam == "DUNKERQUE" || result.bteam == "DUNKERQUE")
+    .slice(0, 5);
 </script>

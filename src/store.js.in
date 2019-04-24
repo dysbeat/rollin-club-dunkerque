@@ -1,5 +1,6 @@
-import { Store } from 'svelte/store.js';
-export default new Store({
+import {writable} from 'svelte/store';
+
+export const data = writable({
   pages: [
     { name: "Accueil", link: "home" },
     { name: "Equipes", link: "teams" },

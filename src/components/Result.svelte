@@ -7,21 +7,6 @@
 	<p class='dark-gray team b { result.bteam == "DUNKERQUE" ? "blue" : ""}'>{ result.bteam }</p>
 </div>
 
-<script>
-  export default {
-    helpers: {
-      MakeInfo(x) {
-        return (
-          "Le " +
-          x.date +
-          (x.schedule ? ", " + x.schedule : "") +
-          (x.place ? ", à " + x.place.toLowerCase() : "")
-        );
-      }
-    }
-  };
-</script>
-
 <style>
   p {
     font-size: 14px;
@@ -68,3 +53,15 @@
     text-decoration: underline;
   }
 </style>
+
+<script>
+  export let result;
+  function MakeInfo(x) {
+    return (
+      "Le " +
+      x.date +
+      (x.schedule ? ", " + x.schedule : "") +
+      (x.place ? ", à " + x.place.toLowerCase() : "")
+    );
+  }
+</script>

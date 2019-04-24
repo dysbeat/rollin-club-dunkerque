@@ -9,5 +9,5 @@
 </style>
 
 <script>
-  export default {};
+  export let schedule;
 </script>

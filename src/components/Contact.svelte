@@ -33,9 +33,3 @@
     color: hsl(220, 37%, 35%);
   }
 </style>
-
-
-
-<script>
-  export default {};
-</script>

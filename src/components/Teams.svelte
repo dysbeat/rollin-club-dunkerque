@@ -1,5 +1,5 @@
 <ul class="rows wrap teams">
-	{#each $teams as team}
+	{#each teams as team}
 	<li>
 		<Team team={team} />
 	</li>
@@ -7,14 +7,9 @@
 </ul>
 <script>
   import Team from "./Team.svelte";
-  import store from "../store.js";
+  import { data } from "../store.js";
 
-  export default {
-    store: () => store,
-    components: {
-      Team
-    }
-  };
+  export let teams = $data.teams;
 </script>
 
 <style>
