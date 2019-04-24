@@ -16,7 +16,7 @@
 <div class="rows wrap info">
 
 	<div class="columns teams">
-		{#each teams as team}
+		{#each $teams as team}
 		<section>
 			<p class="light-blue title">{team.name}</p>
 			<p class="dark-gray">{team.description}</p>
@@ -78,9 +78,9 @@
 <script>
   import Results from "./Results.svelte";
   import Schedules from "./Schedules.svelte";
+  import { teams } from "../stores/teams.js";
   import { data } from "../store.js";
 
-  const teams = $data.teams;
   const results = $data.seasons[0].results
     .reverse()
     .filter(result => result.ateam == "DUNKERQUE" || result.bteam == "DUNKERQUE")
