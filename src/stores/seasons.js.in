@@ -1,0 +1,24 @@
+import {readable, writable} from 'svelte/store';
+
+export const pages = readable([
+  {
+    year: "2018-2019",
+    rankings: |rankings:2018-2019|,
+    players: |players:2018-2019|,
+    results: |results:2018-2019|
+  },
+  {
+    year: "2017-2018",
+    rankings: |rankings:2017-2018|,
+    players: |players:2017-2018|,
+    results: |results:2017-2018|
+  },
+  {
+    year: "2016-2017",
+    rankings: |rankings:2016-2017|,
+    players: |players:2016-2017|,
+    results: |results:2016-2017|
+  }
+]);
+
+export const selectedSeason = writable('2018-2019');

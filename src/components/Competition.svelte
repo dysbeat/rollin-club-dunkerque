@@ -1,13 +1,13 @@
 <ul class="rows menu">
-	{#each seasons as season}
-	<li on:click={()=> $data.selectedSeason = season.year}>
-		<p class='choice {$data.selectedSeason == season.year ? "selected" : ""}'>{season.year}</p>
+	{#each $seasons as season}
+	<li on:click={()=> $selectedSeason = season.year}>
+		<p class='choice {$selectedSeason == season.year ? "selected" : ""}'>{season.year}</p>
 	</li>
 	{/each}
 </ul>
 <div class="competition">
-	{#each seasons as season}
-	{#if season.year == $data.selectedSeason}
+	{#each $seasons as season}
+	{#if season.year == $selectedSeason}
 	<div class="ranking">
 		<p class="large blue title pad">Classement</p>
 		<Rankings rankings={season.rankings} />
@@ -43,7 +43,5 @@
 <script>
   import Rankings from "./Rankings.svelte";
   import Results from "./Results.svelte";
-  import { data } from "../store.js";
-
-  const seasons = $data.seasons;
+  import { selectedSeason, seasons } from "../stores/seasons.js";
 </script>

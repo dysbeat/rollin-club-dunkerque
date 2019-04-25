@@ -79,9 +79,9 @@
   import Results from "./Results.svelte";
   import Schedules from "./Schedules.svelte";
   import { teams } from "../stores/teams.js";
-  import { data } from "../store.js";
+  import { seasons } from "../stores/seasons.js";
 
-  const results = $data.seasons[0].results
+  const results = $seasons[0].results
     .reverse()
     .filter(result => result.ateam == "DUNKERQUE" || result.bteam == "DUNKERQUE")
     .slice(0, 5);

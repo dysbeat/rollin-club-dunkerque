@@ -14,7 +14,7 @@
     "rollup-plugin-generate-html-template": "^1.1.1"
   },
   "scripts": {
-    "update-store": "phantomjs update.js src/store.js.in src/store.js",
+    "update-store": "phantomjs update.js src/stores/seasons.js.in src/stores/seasons.js",
     "deploy-dev": "git push dev master",
     "deploy-prod": "git push prod master",
     "build": "rollup -c",
