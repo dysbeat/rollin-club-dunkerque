@@ -1,6 +1,6 @@
 import {readable, writable} from 'svelte/store';
 
-export const pages = readable([
+export const seasons = readable([
   {
     year: "2018-2019",
     rankings: |rankings:2018-2019|,

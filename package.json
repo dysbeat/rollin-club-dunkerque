@@ -2,19 +2,21 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "devDependencies": {
+    "cypress": "^3.1.5",
+    "mocha": "^6.1.4",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.10.1",
     "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-copy-assets": "^1.1.0",
+    "rollup-plugin-generate-html-template": "^1.1.1",
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^4.0.4",
     "sirv-cli": "^0.3.1",
-    "svelte": "^3.0.0",
-    "rollup-plugin-copy-assets": "^1.1.0",
-    "rollup-plugin-generate-html-template": "^1.1.1"
+    "svelte": "^3.0.0"
   },
   "scripts": {
-    "update-store": "phantomjs update.js src/stores/seasons.js.in src/stores/seasons.js",
+    "update-store": "cypress run --spec cypress/integration/update-store.spec.js",
     "deploy-dev": "git push dev master",
     "deploy-prod": "git push prod master",
     "build": "rollup -c",
