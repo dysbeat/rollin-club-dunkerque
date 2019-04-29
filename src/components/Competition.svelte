@@ -6,27 +6,12 @@
 	{/each}
 </ul>
 <div class="competition">
-	{#each $seasons as season}
-	{#if season.year == $selectedSeason}
-	<div class="ranking">
-		<p class="large blue title pad">Classement</p>
-		<Rankings rankings={season.rankings} />
-	</div>
-	<div class="results">
-		<p class="large blue title pad">Resultats</p>
-		<Results results={season.results.reverse()} />
-	</div>
-	{/if}
-	{/each}
+	<Season season={$selectSeason} />
 </div>
 
 <style>
   .competition {
     text-align: center;
-  }
-
-  .ranking {
-    margin-bottom: 50px;
   }
 
   .menu {
@@ -41,7 +26,6 @@
 </style>
 
 <script>
-  import Rankings from "./Rankings.svelte";
-  import Results from "./Results.svelte";
-  import { selectedSeason, seasons } from "../stores/seasons.js";
+  import Season from "./Season.svelte";
+  import { selectedSeason, selectSeason, seasons } from "../stores/seasons.js";
 </script>
