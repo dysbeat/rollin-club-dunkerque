@@ -19,7 +19,7 @@
     "update-store": "cypress run --spec cypress/integration/update-store.spec.js",
     "deploy-dev": "git push dev master",
     "deploy-prod": "git push prod master",
-    "build": "rollup -c",
+    "build": "rollup -c --environment INCLUDE_DEPS,BUILD:production",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
