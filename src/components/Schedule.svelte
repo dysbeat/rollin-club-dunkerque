@@ -1,4 +1,6 @@
-<p class="schedule dark-gray">{schedule}</p>
+<script>
+  export let schedule;
+</script>
 
 <style>
   .schedule {
@@ -8,6 +10,4 @@
   }
 </style>
 
-<script>
-  export let schedule;
-</script>
+<p class="schedule dark-gray">{schedule}</p>

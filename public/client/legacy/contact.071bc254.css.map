@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "contact.071bc254.css",
+  "sources": [
+    "../../../../../../../src/routes/contact.svelte"
+  ],
+  "sourcesContent": [
+    "<style>\n  .container {\n    margin: auto;\n  }\n  .zone {\n    width: 100%;\n    margin-bottom: 20px;\n    background-color: hsl(203, 15%, 90%);\n  }\n  .message {\n    margin-bottom: 20px;\n    height: 200px;\n  }\n  .submit {\n    cursor: pointer;\n    padding: 5px;\n    margin-right: 5px;\n    float: right;\n    background-color: hsl(203, 15%, 70%);\n  }\n  .submit:hover {\n    color: hsl(220, 37%, 35%);\n  }\n</style>\n\n<form\n  class=\"container\"\n  method=\"GET\"\n  action=\"mailto:rollinclub.dunkerque@gmail.com\"\n  enctype=\"text/plain\">\n  <p class=\"blue title\">Sujet</p>\n  <input class=\"zone\" type=\"text\" name=\"subject\" />\n\n  <p class=\"blue title\">Message</p>\n  <textarea class=\"zone message\" name=\"body\" />\n\n  <div>\n    <input class=\"submit\" type=\"submit\" value=\"Send\" />\n  </div>\n\n</form>\n"
+  ],
+  "names": [],
+  "mappings": "AACE,UAAU,eAAC,CAAC,AACV,MAAM,CAAE,IAAI,AACd,CAAC,AACD,KAAK,eAAC,CAAC,AACL,KAAK,CAAE,IAAI,CACX,aAAa,CAAE,IAAI,CACnB,gBAAgB,CAAE,IAAI,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,AACtC,CAAC,AACD,QAAQ,eAAC,CAAC,AACR,aAAa,CAAE,IAAI,CACnB,MAAM,CAAE,KAAK,AACf,CAAC,AACD,OAAO,eAAC,CAAC,AACP,MAAM,CAAE,OAAO,CACf,OAAO,CAAE,GAAG,CACZ,YAAY,CAAE,GAAG,CACjB,KAAK,CAAE,KAAK,CACZ,gBAAgB,CAAE,IAAI,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,AACtC,CAAC,AACD,sBAAO,MAAM,AAAC,CAAC,AACb,KAAK,CAAE,IAAI,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,AAC3B,CAAC"
+}

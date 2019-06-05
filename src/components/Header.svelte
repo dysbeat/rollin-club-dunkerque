@@ -1,14 +1,7 @@
-<div class="header-line"></div>
-<div class="header">
-	<div class="back"></div>
-	<div class="menu">
-		<Menu />
-	</div>
-	<img class="logo" src="logo.png" alt="logo" />
-</div>
-
 <script>
   import Menu from "./Menu.svelte";
+
+  export let segment;
 </script>
 
 <style>
@@ -54,3 +47,12 @@
       ". logo .";
   }
 </style>
+
+<div class="header-line" />
+<div class="header">
+  <div class="back" />
+  <div class="menu">
+    <Menu {segment} />
+  </div>
+  <img class="logo" src="logo.png" alt="logo" />
+</div>

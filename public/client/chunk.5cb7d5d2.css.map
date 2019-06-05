@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "chunk.5cb7d5d2.css",
+  "sources": [
+    "../../../../../../src/components/Schedule.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let schedule;\n</script>\n\n<style>\n  .schedule {\n    text-align: center;\n    font-size: 14px;\n    font-weight: 600;\n  }\n</style>\n\n<p class=\"schedule dark-gray\">{schedule}</p>\n"
+  ],
+  "names": [],
+  "mappings": "AAKE,SAAS,cAAC,CAAC,AACT,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,AAClB,CAAC"
+}

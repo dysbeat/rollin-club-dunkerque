@@ -1,11 +1,7 @@
-<ul class="columns">
-	{#each results as result}
-	<li>
-		<Result result={result} />
-	</li>
-	{/each}
-</ul>
-
+<script>
+  import Result from "./Result.svelte";
+  export let results;
+</script>
 
 <style>
   li {
@@ -14,7 +10,10 @@
   }
 </style>
 
-<script>
-  import Result from "./Result.svelte";
-  export let results;
-</script>
+<ul class="columns">
+  {#each results as result}
+    <li>
+      <Result {result} />
+    </li>
+  {/each}
+</ul>

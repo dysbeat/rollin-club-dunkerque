@@ -1,18 +1,9 @@
-<nav role="navigation">
-	<div class="container" on:click={()=> visible = !visible}>
-		<div class=' bar first {visible ? "change" : "" }'></div>
-		<div class='bar second {visible ? "change" : ""}'></div>
-		<div class='bar third {visible ? "change" : ""}'></div>
+<script>
+  import { pages } from "../stores/pages.js";
 
-		<ul class='rows menu {visible  ? "change" : ""}'>
-			{#each $pages as page}
-			<li on:click={()=> $selectedPage = page.link}>
-				<p class='choice {$selectedPage == page.link ? "selected" : ""}'>{page.name}</p>
-			</li>
-			{/each}
-		</ul>
-	</div>
-</nav>
+  let visible = false;
+  export let segment;
+</script>
 
 <style>
   .container {
@@ -70,8 +61,22 @@
   }
 </style>
 
-<script>
-  import { selectedPage, pages } from "../stores/pages.js";
+<nav role="navigation">
+  <div class="container" on:click={() => (visible = !visible)}>
+    <div class=" bar first {visible ? 'change' : ''}" />
+    <div class="bar second {visible ? 'change' : ''}" />
+    <div class="bar third {visible ? 'change' : ''}" />
 
-  let visible = false;
-</script>
+    <ul class="rows menu {visible ? 'change' : ''}">
+      {#each $pages as page}
+        <li>
+          <a href={page.link}>
+            <p class="choice {segment == page.link ? 'selected' : ''}">
+               {page.name}
+            </p>
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </div>
+</nav>

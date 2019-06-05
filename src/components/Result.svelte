@@ -1,11 +1,14 @@
-<p class="info light-gray">{ MakeInfo(result) }</p>
-<div class="rows result">
-	<p class='dark-gray team a { result.ateam == "DUNKERQUE" ? "blue" : ""}'>{ result.ateam }</p>
-	<p class='dark-gray score a { +result.ascore > +result.bscore ? "highlight" : ""}'>{ result.ascore }</p>
-	<p class="dark-gray"> | </p>
-	<p class='dark-gray score b { +result.bscore > +result.ascore ? "highlight" : ""}'>{ result.bscore }</p>
-	<p class='dark-gray team b { result.bteam == "DUNKERQUE" ? "blue" : ""}'>{ result.bteam }</p>
-</div>
+<script>
+  export let result;
+  function MakeInfo(x) {
+    return (
+      "Le " +
+      x.date +
+      (x.schedule ? ", " + x.schedule : "") +
+      (x.place ? ", à " + x.place.toLowerCase() : "")
+    );
+  }
+</script>
 
 <style>
   p {
@@ -54,14 +57,21 @@
   }
 </style>
 
-<script>
-  export let result;
-  function MakeInfo(x) {
-    return (
-      "Le " +
-      x.date +
-      (x.schedule ? ", " + x.schedule : "") +
-      (x.place ? ", à " + x.place.toLowerCase() : "")
-    );
-  }
-</script>
+<p class="info light-gray">{MakeInfo(result)}</p>
+<div class="rows result">
+  <p class="dark-gray team a {result.ateam == 'DUNKERQUE' ? 'blue' : ''}">
+    {result.ateam}
+  </p>
+  <p
+    class="dark-gray score a {+result.ascore > +result.bscore ? 'highlight' : ''}">
+    {result.ascore}
+  </p>
+  <p class="dark-gray">|</p>
+  <p
+    class="dark-gray score b {+result.bscore > +result.ascore ? 'highlight' : ''}">
+    {result.bscore}
+  </p>
+  <p class="dark-gray team b {result.bteam == 'DUNKERQUE' ? 'blue' : ''}">
+    {result.bteam}
+  </p>
+</div>
