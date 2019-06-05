@@ -212,20 +212,20 @@ html { font-family: 'Inter', sans-serif; }
 	font-size: 14px;
 	font-weight: 400;
 	padding: 10px;
-	color: hsl(203, 15%, 20%);
+	color: hsl(203, 15%, 10%);
 }
 
 .choice:hover {
-	color: hsl(220, 37%, 35%);
+	color: hsl(220, 37%, 25%);
 }
 
 .choice.selected {
 	cursor: auto;
-	color: hsl(220, 37%, 50%);
+	color: hsl(220, 37%, 40%);
 }
 
 .choice.selected:hover {
-	color: hsl(220, 37%, 50%);
+	color: hsl(220, 37%, 40%);
 }
 
 .large {
@@ -233,25 +233,25 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 .dark-gray {
-	color: hsl(203, 15%, 20%);
+	color: hsl(203, 15%, 10%);
 }
 
 .gray {
-	color: hsl(203, 15%, 30%);
+	color: hsl(203, 15%, 20%);
 }
 
 .light-gray {
-	color: hsl(203, 15%, 50%);
+	color: hsl(203, 15%, 30%);
 }
 
 .dark-blue {
-	color: hsl(220, 37%, 35%);
+	color: hsl(220, 37%, 25%);
 }
 
 .blue {
-	color: hsl(220, 45%, 45%);
+	color: hsl(220, 45%, 35%);
 }
 
 .light-blue {
-	color: hsl(220, 45%, 60%);
+	color: hsl(220, 45%, 50%);
 }

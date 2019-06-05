@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "file": "client.e2a25009.css",
+  "file": "client.45dfc039.css",
   "sources": [
-    "../../../../../../../src/components/Menu.svelte",
-    "../../../../../../../src/components/Header.svelte",
-    "../../../../../../../src/routes/_error.svelte"
+    "../../../../../../src/components/Menu.svelte",
+    "../../../../../../src/components/Header.svelte",
+    "../../../../../../src/routes/_error.svelte"
   ],
   "sourcesContent": [
     "<script>\n  import { pages } from \"../stores/pages.js\";\n\n  let visible = false;\n  export let segment;\n</script>\n\n<style>\n  .container {\n    width: 100%;\n    margin-left: 5px;\n  }\n\n  .bar {\n    display: none;\n  }\n\n  .menu {\n    justify-content: center;\n  }\n\n  @media screen and (max-width: 768px) {\n    .bar {\n      display: flex;\n\n      width: 35px;\n      height: 5px;\n      margin-top: 6px;\n      transition: 0.4s;\n      background-color: hsl(220, 37%, 35%);\n    }\n\n    .third {\n      margin-bottom: 6px;\n    }\n\n    .menu {\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      flex-direction: column;\n\n      display: none;\n    }\n\n    .first.change {\n      -webkit-transform: translateY(10px);\n      transform: translateY(10px);\n      visibility: hidden;\n    }\n    .third.change {\n      -webkit-transform: translateY(-10px);\n      transform: translateY(-10px);\n      visibility: hidden;\n    }\n\n    .menu.change {\n      display: flex;\n      height: auto;\n    }\n  }\n</style>\n\n<nav role=\"navigation\">\n  <div class=\"container\" on:click={() => (visible = !visible)}>\n    <div class=\" bar first {visible ? 'change' : ''}\" />\n    <div class=\"bar second {visible ? 'change' : ''}\" />\n    <div class=\"bar third {visible ? 'change' : ''}\" />\n\n    <ul class=\"rows menu {visible ? 'change' : ''}\">\n      {#each $pages as page}\n        <li>\n          <a href={page.link}>\n            <p class=\"choice {segment == page.link ? 'selected' : ''}\">\n               {page.name}\n            </p>\n          </a>\n        </li>\n      {/each}\n    </ul>\n  </div>\n</nav>\n",

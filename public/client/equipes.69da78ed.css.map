@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "file": "equipes.c74bf515.css",
+  "file": "equipes.69da78ed.css",
   "sources": [
     "../../../../../../src/components/Gear.svelte",
     "../../../../../../src/components/Gears.svelte",
@@ -8,7 +8,7 @@
     "../../../../../../src/routes/equipes.svelte"
   ],
   "sourcesContent": [
-    "<script>\n  export let gear;\n</script>\n\n<style>\n  p {\n    font-size: 14px;\n    text-align: center;\n  }\n</style>\n\n<p class=\"title gray\">{gear.name}</p>\n<p class=\"light-gray\">{gear.description}</p>\n",
+    "<script>\n  export let gear;\n</script>\n\n<style>\n  p {\n    font-size: 14px;\n    text-align: center;\n  }\n</style>\n\n<p class=\"title gray\">{gear.name}</p>\n<p class=\"gray\">{gear.description}</p>\n",
     "<script>\n  import Gear from \"./Gear.svelte\";\n  export let gears;\n</script>\n\n<style>\n  li {\n    padding-bottom: 20px;\n  }\n</style>\n\n<ul class=\"columns\">\n  {#each gears as gear}\n    <li>\n      <Gear {gear} />\n    </li>\n  {/each}\n</ul>\n",
     "<script>\n  import Gears from \"./Gears.svelte\";\n  import Schedules from \"./Schedules.svelte\";\n  export let team;\n</script>\n\n<style>\n  * {\n    text-align: center;\n  }\n  .container {\n    padding-bottom: 72px;\n  }\n\n  .pad {\n    padding-bottom: 10px;\n  }\n\n  .description {\n    font-size: 14px;\n    font-weight: 400;\n    height: 96px;\n  }\n\n  .schedules {\n    height: 72px;\n  }\n</style>\n\n<div class=\"container\">\n  <p class=\"blue title pad\">{team.name}</p>\n  <div class=\"description\">\n    <p class=\"gray\">{team.description}</p>\n    {#if team.name == 'Enfants loisir'}\n      <p class=\"light-gray\">Pret de materiel possible.</p>\n    {/if}\n  </div>\n  <div class=\"schedules\">\n    <p class=\"light-blue title\">Horaires</p>\n    <Schedules schedules={team.schedules} />\n  </div>\n  <p class=\"light-blue title\">Equipement</p>\n  <Gears gears={team.gears} />\n</div>\n",
     "<script>\n  import Team from \"../components/Team.svelte\";\n  import { teams } from \"../stores/teams.js\";\n</script>\n\n<style>\n  .teams {\n    justify-content: center;\n  }\n\n  li {\n    width: 300px;\n  }\n</style>\n\n<ul class=\"rows wrap teams\">\n  {#each $teams as team}\n    <li>\n      <Team {team} />\n    </li>\n  {/each}\n</ul>\n"

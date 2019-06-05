@@ -10,4 +10,4 @@
 </style>
 
 <p class="title gray">{gear.name}</p>
-<p class="light-gray">{gear.description}</p>
+<p class="gray">{gear.description}</p>
