@@ -13,6 +13,13 @@
   }
 </style>
 
+<svelte:head>
+  <title>Roll'in Club Dunkerque - Equipes</title>
+  <meta
+    name="Description"
+    content="Présentation des horaires et de l'équipement de hockey des équipes" />
+</svelte:head>
+
 <ul class="rows wrap teams">
   {#each $teams as team}
     <li>

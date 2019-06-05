@@ -56,6 +56,13 @@
   }
 </style>
 
+<svelte:head>
+  <title>Roll'in Club Dunkerque</title>
+  <meta
+    name="Description"
+    content="Accueil du site officiel du roller hockey club de Dunkerque" />
+</svelte:head>
+
 <section>
   <p class="large blue title">Roll'in club dunkerque</p>
 </section>

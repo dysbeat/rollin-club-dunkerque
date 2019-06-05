@@ -63,7 +63,7 @@
 
 <nav role="navigation">
   <div class="container" on:click={() => (visible = !visible)}>
-    <div class=" bar first {visible ? 'change' : ''}" />
+    <div class="bar first {visible ? 'change' : ''}" />
     <div class="bar second {visible ? 'change' : ''}" />
     <div class="bar third {visible ? 'change' : ''}" />
 
@@ -71,7 +71,8 @@
       {#each $pages as page}
         <li>
           <a href={page.link}>
-            <p class="choice {segment == page.link ? 'selected' : ''}">
+            <p
+              class="choice {segment == page.link || (segment == undefined && page.link == '.') ? 'selected' : ''}">
                {page.name}
             </p>
           </a>

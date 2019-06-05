@@ -23,6 +23,11 @@
   }
 </style>
 
+<svelte:head>
+  <title>Roll'in Club Dunkerque - Contact</title>
+  <meta name="Description" content="Contacter le roll'in club de Dunkerque" />
+</svelte:head>
+
 <form
   class="container"
   method="GET"

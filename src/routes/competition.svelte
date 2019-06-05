@@ -19,11 +19,19 @@
   }
 </style>
 
+<svelte:head>
+  <title>Roll'in Club Dunkerque - Compétition</title>
+  <meta
+    name="Description"
+    content="Classement des équipes pré-nationale de roller hockey - Région Haut
+    de France" />
+</svelte:head>
+
 <ul class="rows menu">
   {#each $seasons as season}
     <li on:click={() => ($selectedSeason = season.year)}>
       <p class="choice {$selectedSeason == season.year ? 'selected' : ''}">
-        {season.year}
+         {season.year}
       </p>
     </li>
   {/each}
