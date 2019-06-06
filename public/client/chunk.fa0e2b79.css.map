@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "chunk.fa0e2b79.css",
+  "sources": [
+    "../../../../../../src/components/Rankings.svelte",
+    "../../../../../../src/components/Season.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let rankings;\n</script>\n\n<style>\n  .rank:first-child {\n    font-size: 14px;\n    font-weight: 600;\n  }\n\n  .list {\n    justify-content: center;\n    font-size: inherit;\n    font-weight: inherit;\n  }\n\n  .item:first-child {\n    min-width: 24px;\n  }\n\n  .item {\n    min-width: 48px;\n    text-align: right;\n    font-size: inherit;\n    font-weight: inherit;\n  }\n  .item.team {\n    min-width: 176px;\n  }\n\n  @media screen and (max-width: 768px) {\n    .show {\n      display: none;\n    }\n  }\n</style>\n\n<ul>\n  {#each rankings as ranking}\n    <li class=\"gray rank\">\n      <ul class=\"rows list {ranking.teams == 'Dunkerque' ? 'blue' : ''}\">\n        <li class=\"item\">{ranking.rank}</li>\n        <li class=\"item team\">{ranking.teams}</li>\n        <li class=\"item\">{ranking.points}</li>\n        <li class=\"item show\">{ranking.played}</li>\n        <li class=\"item show\">{ranking.wins}</li>\n        <li class=\"item show\">{ranking.draws}</li>\n        <li class=\"item show\">{ranking.loses}</li>\n        <li class=\"item show\">{ranking.forfaited}</li>\n        <li class=\"item show\">{ranking.goals}</li>\n        <li class=\"item show\">{ranking.goalsAllowed}</li>\n        <li class=\"item show\">{ranking.goalsDiff}</li>\n      </ul>\n    </li>\n  {/each}\n</ul>\n",
+    "<script>\n  import Rankings from \"./Rankings.svelte\";\n  import Results from \"./Results.svelte\";\n\n  export let season;\n</script>\n\n<style>\n  .ranking {\n    margin-bottom: 50px;\n  }\n</style>\n\n<div class=\"ranking\">\n  <p class=\"large blue title pad\">Classement</p>\n  <Rankings rankings={season.rankings} />\n</div>\n<div>\n  <p class=\"large blue title pad\">Resultats</p>\n  <Results results={season.results} />\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAKE,mBAAK,YAAY,AAAC,CAAC,AACjB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,AAClB,CAAC,AAED,KAAK,cAAC,CAAC,AACL,eAAe,CAAE,MAAM,CACvB,SAAS,CAAE,OAAO,CAClB,WAAW,CAAE,OAAO,AACtB,CAAC,AAED,mBAAK,YAAY,AAAC,CAAC,AACjB,SAAS,CAAE,IAAI,AACjB,CAAC,AAED,KAAK,cAAC,CAAC,AACL,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,KAAK,CACjB,SAAS,CAAE,OAAO,CAClB,WAAW,CAAE,OAAO,AACtB,CAAC,AACD,KAAK,KAAK,cAAC,CAAC,AACV,SAAS,CAAE,KAAK,AAClB,CAAC,AAED,OAAO,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACpC,KAAK,cAAC,CAAC,AACL,OAAO,CAAE,IAAI,AACf,CAAC,AACH,CAAC;AC1BD,QAAQ,eAAC,CAAC,AACR,aAAa,CAAE,IAAI,AACrB,CAAC"
+}

@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "2017-2018.21e5b373.css",
+  "sources": [
+    "../../../../../../src/routes/competition/2017-2018.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  import Season from \"../../components/Season.svelte\";\n\n  import { seasons } from \"../../stores/seasons.js\";\n</script>\n\n<style>\n  .competition {\n    text-align: center;\n  }\n</style>\n\n<div class=\"competition\">\n  <Season season={$seasons[1]} />\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAOE,YAAY,eAAC,CAAC,AACZ,UAAU,CAAE,MAAM,AACpB,CAAC"
+}

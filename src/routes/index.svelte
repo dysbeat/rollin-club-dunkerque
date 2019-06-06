@@ -13,12 +13,6 @@
 </script>
 
 <style>
-  .map-container {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-  }
-
   section {
     padding-bottom: 30px;
     width: 100%;
@@ -27,11 +21,6 @@
   .info {
     justify-content: center;
     width: 100%;
-  }
-
-  .team-description {
-    font-weight: 400;
-    margin-bottom: 4px;
   }
 
   p {
