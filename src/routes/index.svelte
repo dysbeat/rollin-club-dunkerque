@@ -27,11 +27,26 @@
     text-align: center;
   }
 
+  a {
+    text-align: center;
+  }
+
   .teams {
     width: 400px;
   }
   .results {
     width: 400px;
+  }
+
+  a {
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    color: hsl(220, 37%, 40%);
   }
 
   @media screen and (max-width: 768px) {
@@ -61,19 +76,12 @@
   <p class="dark-gray">Salle de sport du lycée de l'Europe</p>
   <p class="dark-gray">809 Rue du Banc vert</p>
   <p class="dark-gray">59640 Dunkerque</p>
-  <!-- 
-  <div class="map-container">
-    <iframe
-      class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.847016389118!2d2.353084015917681!3d51.01897505411693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23103bd5b7fc888!2sGymnase+du+Lyc%C3%A9e+de+l'Europe!5e0!3m2!1sen!2sfr!4v1551816962334"
-      title="map"
-      width="600"
-      height="450"
-      frameborder="0"
-      style="border:0"
-      allowfullscreen />
-  </div>
-   -->
+  <p>
+    <a
+      href="https://www.google.com/maps/place/Gymnase+du+Lyc%C3%A9e+de+l'Europe/@51.0204252,2.3519417,17z/data=!4m5!3m4!1s0x47dc8b64b6f18c5d:0x23103bd5b7fc888!8m2!3d51.0195402!4d2.3544176">
+      Ouvrir dans google maps
+    </a>
+  </p>
 </section>
 <div class="rows wrap info">
 
