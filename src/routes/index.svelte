@@ -4,7 +4,8 @@
   import { teams } from "../stores/teams.js";
   import { seasons } from "../stores/seasons.js";
 
-  const results = $seasons[0].results
+  const current_results = [...$seasons[0].results];
+  const results = current_results
     .reverse()
     .filter(
       result => result.ateam == "DUNKERQUE" || result.bteam == "DUNKERQUE"
