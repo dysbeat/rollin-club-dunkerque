@@ -79,6 +79,8 @@
   <p class="dark-gray">59640 Dunkerque</p>
   <p>
     <a
+      target="_blank"
+      rel="noopener noreferrer"
       href="https://www.google.com/maps/place/Gymnase+du+Lyc%C3%A9e+de+l'Europe/@51.0204252,2.3519417,17z/data=!4m5!3m4!1s0x47dc8b64b6f18c5d:0x23103bd5b7fc888!8m2!3d51.0195402!4d2.3544176">
       Ouvrir dans google maps
     </a>
