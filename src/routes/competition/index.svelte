@@ -1,15 +1,5 @@
-<script>
-  import Season from "../../components/Season.svelte";
-
-  import { seasons } from "../../stores/seasons.js";
-</script>
-
-<style>
-  .competition {
-    text-align: center;
+<script context="module">
+  export async function preload(page, session) {
+    return this.redirect(302, "competition/2018-2019");
   }
-</style>
-
-<div class="competition">
-  <Season season={$seasons[0]} />
-</div>
+</script>
