@@ -59,7 +59,7 @@
 
 <p class="info light-gray">{MakeInfo(result)}</p>
 <div class="rows result">
-  <p class="dark-gray team a {result.ateam == 'DUNKERQUE' ? 'blue' : ''}">
+  <p class="dark-gray team a {result.ateam == 'Dunkerque' ? 'blue' : ''}">
     {result.ateam}
   </p>
   <p
@@ -71,7 +71,7 @@
     class="dark-gray score b {+result.bscore > +result.ascore ? 'highlight' : ''}">
     {result.bscore}
   </p>
-  <p class="dark-gray team b {result.bteam == 'DUNKERQUE' ? 'blue' : ''}">
+  <p class="dark-gray team b {result.bteam == 'Dunkerque' ? 'blue' : ''}">
     {result.bteam}
   </p>
 </div>

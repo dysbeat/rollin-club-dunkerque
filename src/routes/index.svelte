@@ -4,11 +4,11 @@
   import { teams } from "../stores/teams.js";
   import { seasons } from "../stores/seasons.js";
 
-  const current_results = [...$seasons[0].results];
+  const current_results = [...$seasons[3].results];
   const results = current_results
     .reverse()
     .filter(
-      result => result.ateam == "DUNKERQUE" || result.bteam == "DUNKERQUE"
+      result => result.ateam == "Dunkerque" || result.bteam == "Dunkerque"
     )
     .slice(0, 5);
 </script>

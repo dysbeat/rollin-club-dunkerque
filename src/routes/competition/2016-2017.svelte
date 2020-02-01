@@ -22,5 +22,5 @@
 </svelte:head>
 
 <div class="competition">
-  <Season season={$seasons[2]} />
+  <Season season={$seasons[0]} />
 </div>

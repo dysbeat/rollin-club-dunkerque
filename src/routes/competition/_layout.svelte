@@ -17,10 +17,10 @@
   {#each $seasons as season}
     <li>
       <a
-        href={'competition' + (season.year == '2018-2019' ? '' : '/' + season.year)}>
+        href={'competition' + (season.year == '2019-2020' ? '' : '/' + season.year)}>
         <p
-          class="choice {segment == season.year || (segment == undefined && season.year == '2018-2019') ? 'selected' : ''}">
-           {season.year}
+          class="choice {segment == season.year || (segment == undefined && season.year == '2019-2020') ? 'selected' : ''}">
+          {season.year}
         </p>
       </a>
     </li>

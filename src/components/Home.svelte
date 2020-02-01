@@ -7,7 +7,7 @@
   const results = $seasons[0].results
     .reverse()
     .filter(
-      result => result.ateam == "DUNKERQUE" || result.bteam == "DUNKERQUE"
+      result => result.ateam == "Dunkerque" || result.bteam == "Dunkerque"
     )
     .slice(0, 5);
 </script>

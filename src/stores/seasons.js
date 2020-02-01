@@ -2,7 +2,7 @@ import {derived, readable, writable} from 'svelte/store';
 
 import {seasons_data} from './seasons_data';
 
-export const selectedSeason = writable('2018-2019');
+export const selectedSeason = writable('2019-2020');
 
 export const seasons = readable(seasons_data);
 
