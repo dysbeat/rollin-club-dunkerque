@@ -1,0 +1,16 @@
+[
+{"date": "17/11/2019", "day": "1", "ateam": "Boulogne sur Mer", "ascore": "7", "bteam": "Dunkerque", "bscore": "8", "schedule": "09:00", "place": "boulogne sur mer"},
+{"date": "17/11/2019", "day": "1", "ateam": "Douai", "ascore": "10", "bteam": "Valenciennes ", "bscore": "5", "schedule": "11:00", "place": "boulogne sur mer"},
+{"date": "24/11/2019", "day": "2", "ateam": "Boulogne sur Mer", "ascore": "6", "bteam": "Douai", "bscore": "6", "schedule": "09:00", "place": "boulogne sur mer"},
+{"date": "24/11/2019", "day": "2", "ateam": "Bethune", "ascore": "5", "bteam": "Dunkerque", "bscore": "10", "schedule": "11:00", "place": "boulogne sur mer"},
+{"date": "08/12/2019", "day": "3", "ateam": "Douai", "ascore": "5", "bteam": "Bethune", "bscore": "5", "schedule": "09:00", "place": "boulogne sur mer"},
+{"date": "08/12/2019", "day": "3", "ateam": "Boulogne sur Mer", "ascore": "7", "bteam": "Valenciennes ", "bscore": "6", "schedule": "11:20", "place": "boulogne sur mer"},
+{"date": "15/12/2019", "day": "4", "ateam": "Boulogne sur Mer", "ascore": "9", "bteam": "Bethune", "bscore": "7", "schedule": "09:00", "place": "boulogne sur mer"},
+{"date": "15/12/2019", "day": "4", "ateam": "Dunkerque", "ascore": "14", "bteam": "Valenciennes ", "bscore": "6", "schedule": "11:00", "place": "boulogne sur mer"},
+{"date": "12/01/2020", "day": "5", "ateam": "Bethune", "ascore": "3", "bteam": "Douai", "bscore": "3", "schedule": "09:00", "place": "lille"},
+{"date": "12/01/2020", "day": "5", "ateam": "Valenciennes ", "ascore": "9", "bteam": "Dunkerque", "bscore": "8", "schedule": "11:00", "place": "lille"},
+{"date": "26/01/2020", "day": "6", "ateam": "Boulogne sur Mer", "ascore": "3", "bteam": "Dunkerque", "bscore": "7", "schedule": "09:00", "place": "boulogne sur mer"},
+{"date": "26/01/2020", "day": "6", "ateam": "Bethune", "ascore": "5", "bteam": "Valenciennes ", "bscore": "F", "schedule": "11:00", "place": "boulogne sur mer"},
+{"date": "02/02/2020", "day": "7", "ateam": "Douai", "ascore": "", "bteam": "Dunkerque", "bscore": "", "schedule": "09:00", "place": "boulogne sur mer"},
+{"date": "02/02/2020", "day": "7", "ateam": "Boulogne sur Mer", "ascore": "", "bteam": "Valenciennes ", "bscore": "", "schedule": "11:00", "place": "boulogne sur mer"}
+]

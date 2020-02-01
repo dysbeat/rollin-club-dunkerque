@@ -1,0 +1,8 @@
+[
+{"rank": "Pl", "teams": "Equipe", "points": "Pts", "played": "J.", "wins": "V.", "draws": "E.", "loses": "P.", "forfaited": "F.", "goals": "buts", "goalsAllowed": "BE.", "goalsDiff": "diff."},
+{"rank": "1", "teams": "Dunkerque", "points": "12", "played": "5", "wins": "4", "draws": "0", "loses": "1", "forfaited": "0", "goals": "47", "goalsAllowed": "30", "goalsDiff": "17"},
+{"rank": "2", "teams": "Boulogne sur Mer", "points": "7", "played": "5", "wins": "2", "draws": "0", "loses": "2", "forfaited": "0", "goals": "32", "goalsAllowed": "34", "goalsDiff": "-2"},
+{"rank": "3", "teams": "Douai", "points": "6", "played": "4", "wins": "1", "draws": "0", "loses": "0", "forfaited": "0", "goals": "24", "goalsAllowed": "19", "goalsDiff": "5"},
+{"rank": "4", "teams": "Bethune", "points": "5", "played": "5", "wins": "1", "draws": "0", "loses": "2", "forfaited": "0", "goals": "25", "goalsAllowed": "27", "goalsDiff": "-2"},
+{"rank": "5", "teams": "Valenciennes ", "points": "1", "played": "5", "wins": "1", "draws": "0", "loses": "3", "forfaited": "0", "goals": "26", "goalsAllowed": "44", "goalsDiff": "-18"}
+]
