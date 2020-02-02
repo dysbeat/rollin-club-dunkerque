@@ -10,7 +10,8 @@
     .filter(
       result => result.ateam == "Dunkerque" || result.bteam == "Dunkerque"
     )
-    .slice(0, 5);
+    .slice(0, 5)
+    .filter(result => result.ascore != "" && result.bscore != "");
 </script>
 
 <style>
