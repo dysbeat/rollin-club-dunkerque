@@ -25,7 +25,7 @@ with open('../src/stores/seasons_data.js', 'w') as writer:
             filename = '{}-{}.json'.format(command, season)
             os.system('rm {}'.format(filename))
             os.system(
-                'scrapy crawl {} -a season={} -o {}'.format(command, season, filename))
+                'python -m scrapy crawl {} -a season={} -o {}'.format(command, season, filename))
             with open(filename) as f:
                 results = f.read()
                 writer.write(results)
