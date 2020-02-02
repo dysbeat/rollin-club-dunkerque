@@ -2,3 +2,5 @@ node_modules/
 __sapper__/
 .vscode/
 **/*.swp
+scrapper/rankings-*
+scrapper/results-*
