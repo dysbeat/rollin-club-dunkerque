@@ -5,13 +5,10 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export && rm -Rf public/* && cp -R __sapper__/export/* public/.",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run",
-    "deploy-dev": "git push -f dev master",
-    "deploy-prod": "git push prod master"
+    "test": "run-p --race dev cy:run"
   },
   "dependencies": {
     "compression": "^1.7.1",
