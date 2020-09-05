@@ -87,12 +87,12 @@
 </section>
 
 <section class="inscription">
-  <p class="dark-gray title">La saison 2019/2020 va bientôt commencer!</p>
+  <p class="dark-gray title">La saison 2020/2021 va bientôt commencer!</p>
   <p>
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href="https://docs.google.com/forms/d/e/1FAIpQLSfgWUjSPA-pdAH9T0-irgS5wSTuNLl_yrJAklnTzf0coSgxzw/viewform?ts=5d6d71de">
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc7smkcSlOJ-dkldipqw1jmTAxlpD0QE-IZopoTtCqTm-n-Aw/viewform">
       Remplir mon formulaire d'inscription
     </a>
   </p>
@@ -100,7 +100,7 @@
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href="https://docs.google.com/forms/d/1pqk2rOrSmAi9UG890341Adzxd-EEtpMMQBaVvni2mik/viewform?ts=5d6d74c9">
+      href="https://docs.google.com/forms/d/e/1FAIpQLScH1IQ3L58VDbKRzSdysr-sedsiOEEUcnqdNz8z3zisxPJ5UQ/viewform">
       Remplir mon questionnaire de santé
     </a>
   </p>
