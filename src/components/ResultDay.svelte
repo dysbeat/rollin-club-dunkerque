@@ -104,7 +104,7 @@
       display: grid;
       grid-template-columns: auto 250px 50px auto;
       grid-template-rows: repeat(1, 40px);
-      grid-template-areas: ". info . .";
+      grid-template-areas: ". info info .";
       grid-column-gap: 0px;
     }
 

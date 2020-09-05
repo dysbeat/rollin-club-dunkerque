@@ -28,6 +28,66 @@
     min-width: 176px;
   }
 
+  .header {
+    display: grid;
+    grid-template-columns: auto 50px 200px repeat(9, 50px) auto;
+    grid-template-rows: repeat(1, 20px);
+    grid-template-areas: ". info info info info info info info info info info info .";
+    grid-column-gap: 0px;
+  }
+
+  .rank {
+    grid-area: rank;
+  }
+
+  .team {
+    grid-area: team;
+  }
+
+  .pts {
+    grid-area: pts;
+  }
+
+  .gp {
+    grid-area: gp;
+  }
+
+  .victory {
+    grid-area: victory;
+  }
+
+  .defeat {
+    grid-area: defeat;
+  }
+
+  .draw {
+    grid-area: draw;
+  }
+
+  .forfait {
+    grid-area: forfait;
+  }
+
+  .goals {
+    grid-area: goals;
+  }
+
+  .ga {
+    grid-area: ga;
+  }
+
+  .diff {
+    grid-area: diff;
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: auto 50px 200px repeat(9, 50px) auto;
+    grid-template-rows: repeat(1, 20px);
+    grid-template-areas: ". rank team pts gp victory defeat draw forfait goals ga diff .";
+    grid-row-gap: 0px;
+  }
+
   @media screen and (max-width: 768px) {
     .show {
       display: none;
