@@ -51,6 +51,19 @@
     color: hsl(220, 37%, 40%);
   }
 
+  .inscription {
+    border: 1px solid hsl(220, 37%, 40%);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 16px;
+  }
+
   @media screen and (max-width: 768px) {
     .teams {
       width: 100%;
@@ -71,6 +84,26 @@
 
 <section>
   <p class="large blue title">Roll'in club dunkerque</p>
+</section>
+
+<section class="inscription">
+  <p class="dark-gray title">La saison 2019/2020 va bientôt commencer!</p>
+  <p>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfgWUjSPA-pdAH9T0-irgS5wSTuNLl_yrJAklnTzf0coSgxzw/viewform?ts=5d6d71de">
+      Remplir mon formulaire d'inscription
+    </a>
+  </p>
+  <p>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://docs.google.com/forms/d/1pqk2rOrSmAi9UG890341Adzxd-EEtpMMQBaVvni2mik/viewform?ts=5d6d74c9">
+      Remplir mon questionnaire de santé
+    </a>
+  </p>
 </section>
 
 <section>
